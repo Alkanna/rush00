@@ -1,3 +1,5 @@
+<html>
+
 <head>
     <meta charset="utf-8" />
     <title>Rush00</title>
@@ -69,3 +71,5 @@
         </div>
     </footer>
 </body>
+
+</html>
