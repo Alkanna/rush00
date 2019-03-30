@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+
+  <body>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+        <h2 class="active">Login</h2>
+        <h2 class="inactive underlineHover">
+          <a href="create.html"> Register </a>
+        </h2>
+        <h2 class="inactive underlineHover"><a href="modif.html"> Edit </a></h2>
+        <!-- Login Form -->
+        <form action="login.php" method="POST">
+          <input
+            type="text"
+            id="login"
+            class="fadeIn second"
+            name="login"
+            placeholder="Username"
+          />
+          <input
+            type="text"
+            id="password"
+            class="fadeIn third"
+            name="passwd"
+            placeholder="Password"
+          />
+          <input type="submit" name="submit" class="fadeIn fourth" value="OK" />
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script language="javascript">
+    $(".message a").click(function() {
+      $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
+    });
+  </script>
+</html>
