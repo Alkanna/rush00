@@ -81,7 +81,6 @@
                     <dl>
                         <dt>Product ID</dt>
                         <dd>6442567</dd>
-                        <dd>Light blue</dd>
                         <dt>Size:</dt>
                         <dd>S</dd>
                         <dt>Quantity:</dt>
@@ -107,7 +106,6 @@
                     <dl>
                         <dt>Product ID</dt>
                         <dd>1936246</dd>
-                        <dd>Light blue</dd>
                         <dt>Size:</dt>
                         <dd>S</dd>
                         <dt>Quantity:</dt>
@@ -133,7 +131,6 @@
                     <dl>
                         <dt>Product ID</dt>
                         <dd>1936246</dd>
-                        <dd>Light blue</dd>
                         <dt>Size:</dt>
                         <dd>S</dd>
                         <dt>Quantity:</dt>
