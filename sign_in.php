@@ -21,7 +21,7 @@ include('login.php');
       <input style="margin-top:30px" required type="text" id="nom" class="fadeIn second" name="nom" placeholder="Name"/>
       <input required type="text" id="prenom" class="fadeIn second" name="prenom" placeholder="Lastname"/>
       <input required type="mail" pattern=".+@.+.com" id="mail" class="fadeIn second" name="mail" placeholder="Mail" />
-      <input required type="text" id="login" class="fadeIn second" name="login" placeholder="Login" />
+      <input required type="text" id="login" class="fadeIn second" name="login" minlength="5" placeholder="Login" />
       <input required type="password" id="password" class="fadeIn third" name="passwd" minlength="8" placeholder="Password" />
       <input style="margin-top:35px;margin-bottom:30px;" required type="submit" name="submit" class="fadeIn fourth" value="OK" />
       <?php if (start_login() == 2) echo "<p>Nom d'utilisateur et/ou mot de passe erroné.</p>";?>
