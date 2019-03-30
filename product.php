@@ -53,7 +53,7 @@
             </form>
             <div id="action-bar">
                 <a href="sign_in.php">Login/Register</a> //
-                <a href="viewbasket.php">Your bag (3) &nbsp; &pound;148</a>
+                <a href="viewbasket.php">Your bag (3) &nbsp; &euro;148</a>
             </div>
         </div>
     </aside>
@@ -64,7 +64,7 @@
         </div>
         <div id="description">
             <h1>Elegant evening Dress</h1>
-            <strong id="price"><span>previously &pound;299.00</span> &pound;249.00</strong>
+            <strong id="price"><span>previously &euro;299.00</span> &euro;249.00</strong>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 volutpat ultricies fringilla. Suspendisse iaculis tristique leo, id
