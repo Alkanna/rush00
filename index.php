@@ -1,9 +1,12 @@
+<?php
+    session_start();
+?>
 <html>
 
 <head>
     <meta charset="utf-8" />
     <title>Rush00</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link href="http://fonts.googleapis.com/css?family=Terminal+Dosis" rel="stylesheet" type="text/css" />
 </head>
 
@@ -53,7 +56,12 @@
                 </button>
             </form>
             <div id="action-bar">
-                <a href="login.html">Login/Register</a> //
+            <?php if (isset($_SESSION['loggued_on_user']) && !empty($_SESSION['loggued_on_user'])) : ?>
+                <a href="administration.php">My Account</a> /
+                <a href="logout.php">Logout</a> /
+            <?php else : ?>
+                <a href="sign_in.php">Login/Register</a> /
+            <?php endif;?>
                 <a href="viewbasket.html">Your bag (0)</a>
             </div>
         </div>
