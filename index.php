@@ -10,27 +10,27 @@
 <body id="home">
     <header>
         <div class="wrapper">
-            <h1><a href="index.html" id="brand" title="Rush00">Rush00</a></h1>
+            <h1><a href="index.php" id="brand" title="Rush00">Rush00</a></h1>
             <nav>
                 <ul>
                     <li>
-                        <a href="search.html">Tops</a>
+                        <a href="search.php">Tops</a>
                         <ul class="sub-menu">
-                            <li><a href="search.html">Tshirts</a></li>
-                            <li><a href="search.html">Jumpers</a></li>
-                            <li><a href="search.html">Cardigans</a></li>
-                            <li><a href="search.html">Knitwear</a></li>
+                            <li><a href="search.php">Tshirts</a></li>
+                            <li><a href="search.php">Jumpers</a></li>
+                            <li><a href="search.php">Cardigans</a></li>
+                            <li><a href="search.php">Knitwear</a></li>
                         </ul>
                     </li>
-                    <li><a href="search.html">Trousers</a></li>
+                    <li><a href="search.php">Trousers</a></li>
                     <li>
-                        <a href="search.html">Dresses</a>
+                        <a href="search.php">Dresses</a>
                         <ul class="sub-menu">
-                            <li><a href="search.html">Bridal dress</a></li>
-                            <li><a href="search.html">Cocktail dress</a></li>
-                            <li><a href="search.html">Maxi dress</a></li>
-                            <li><a href="search.html">Shift dress</a></li>
-                            <li><a href="search.html">Warp dress</a></li>
+                            <li><a href="search.php">Bridal dress</a></li>
+                            <li><a href="search.php">Cocktail dress</a></li>
+                            <li><a href="search.php">Maxi dress</a></li>
+                            <li><a href="search.php">Shift dress</a></li>
+                            <li><a href="search.php">Warp dress</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -53,13 +53,13 @@
                 </button>
             </form>
             <div id="action-bar">
-                <a href="login.html">Login/Register</a> //
-                <a href="viewbasket.html">Your bag (0)</a>
+                <a href="login.php">Login/Register</a> //
+                <a href="viewbasket.php">Your bag (0)</a>
             </div>
         </div>
     </aside>
     <article>
-        <a href="search.html"><img src="images/photo.jpg" /></a>
+        <a href="search.php"><img src="images/photo.jpg" /></a>
     </article>
     <footer>
         <div class="wrapper">
