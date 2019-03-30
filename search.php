@@ -55,7 +55,7 @@
             </form>
             <div id="action-bar">
                 <a href="login.php">Login/Register</a> //
-                <a href="viewbasket.php">Your bag (3) &nbsp; &pound;148</a>
+                <a href="viewbasket.php">Your bag (3) &nbsp; &euro;148</a>
             </div>
         </div>
     </aside>
@@ -84,135 +84,135 @@
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
+                <strong>&euro;499</strong>
             </li>
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
+                <strong>&euro;499</strong>
             </li>
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Longer title Elegant evening Dress</a>
-                <strong>&pound;499</strong>
+                <strong>&euro;499</strong>
             </li>
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
+                <strong>&euro;499</strong>
             </li>
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong><em>previously &pound;649</em>&pound;499</strong>
-                <span class="sale">Sale</span>
-            </li>
-            <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Longer title Elegant evening Dress</a>
-                <strong><em>previously &pound;649</em>&pound;499</strong>
-                <span class="sale">Sale</span>
-            </li>
-            <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
-            </li>
-            <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong><em>previously &pound;649</em>&pound;499</strong>
-                <span class="sale">Sale</span>
-            </li>
-            <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
-            </li>
-            <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
-            </li>
-            <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong><em>previously &pound;649</em>&pound;499</strong>
-                <span class="sale">Sale</span>
-            </li>
-            <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
-            </li>
-            <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
-            </li>
-            <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
-            </li>
-            <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Longer title Elegant evening Dress</a>
-                <strong>&pound;499</strong>
-            </li>
-            <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
-            </li>
-            <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong><em>previously &pound;649</em>&pound;499</strong>
+                <strong><em>previously &euro;649</em>&euro;499</strong>
                 <span class="sale">Sale</span>
             </li>
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Longer title Elegant evening Dress</a>
-                <strong>&pound;499</strong>
+                <strong><em>previously &euro;649</em>&euro;499</strong>
                 <span class="sale">Sale</span>
             </li>
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
+                <strong>&euro;499</strong>
             </li>
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong><em>previously &pound;649</em>&pound;499</strong>
+                <strong><em>previously &euro;649</em>&euro;499</strong>
                 <span class="sale">Sale</span>
             </li>
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
+                <strong>&euro;499</strong>
             </li>
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
+                <strong>&euro;499</strong>
             </li>
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong><em>previously &pound;649</em>&pound;499</strong>
+                <strong><em>previously &euro;649</em>&euro;499</strong>
                 <span class="sale">Sale</span>
             </li>
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
+                <strong>&euro;499</strong>
             </li>
             <li>
                 <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="main.php" class="title">Elegant evening Dress</a>
-                <strong>&pound;499</strong>
+                <strong>&euro;499</strong>
+            </li>
+            <li>
+                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="main.php" class="title">Elegant evening Dress</a>
+                <strong>&euro;499</strong>
+            </li>
+            <li>
+                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="main.php" class="title">Longer title Elegant evening Dress</a>
+                <strong>&euro;499</strong>
+            </li>
+            <li>
+                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="main.php" class="title">Elegant evening Dress</a>
+                <strong>&euro;499</strong>
+            </li>
+            <li>
+                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="main.php" class="title">Elegant evening Dress</a>
+                <strong><em>previously &euro;649</em>&euro;499</strong>
+                <span class="sale">Sale</span>
+            </li>
+            <li>
+                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="main.php" class="title">Longer title Elegant evening Dress</a>
+                <strong>&euro;499</strong>
+                <span class="sale">Sale</span>
+            </li>
+            <li>
+                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="main.php" class="title">Elegant evening Dress</a>
+                <strong>&euro;499</strong>
+            </li>
+            <li>
+                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="main.php" class="title">Elegant evening Dress</a>
+                <strong><em>previously &euro;649</em>&euro;499</strong>
+                <span class="sale">Sale</span>
+            </li>
+            <li>
+                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="main.php" class="title">Elegant evening Dress</a>
+                <strong>&euro;499</strong>
+            </li>
+            <li>
+                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="main.php" class="title">Elegant evening Dress</a>
+                <strong>&euro;499</strong>
+            </li>
+            <li>
+                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="main.php" class="title">Elegant evening Dress</a>
+                <strong><em>previously &euro;649</em>&euro;499</strong>
+                <span class="sale">Sale</span>
+            </li>
+            <li>
+                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="main.php" class="title">Elegant evening Dress</a>
+                <strong>&euro;499</strong>
+            </li>
+            <li>
+                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="main.php" class="title">Elegant evening Dress</a>
+                <strong>&euro;499</strong>
             </li>
         </ul>
         <footer>
