@@ -82,136 +82,136 @@
         </header>
         <ul id="items">
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Longer title Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Longer title Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong><em>previously &euro;649</em>&euro;499</strong>
                 <span class="sale">Sale</span>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Longer title Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Longer title Elegant evening Dress</a>
                 <strong><em>previously &euro;649</em>&euro;499</strong>
                 <span class="sale">Sale</span>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong><em>previously &euro;649</em>&euro;499</strong>
                 <span class="sale">Sale</span>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong><em>previously &euro;649</em>&euro;499</strong>
                 <span class="sale">Sale</span>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Longer title Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Longer title Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong><em>previously &euro;649</em>&euro;499</strong>
                 <span class="sale">Sale</span>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Longer title Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Longer title Elegant evening Dress</a>
                 <strong>&euro;499</strong>
                 <span class="sale">Sale</span>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong><em>previously &euro;649</em>&euro;499</strong>
                 <span class="sale">Sale</span>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong><em>previously &euro;649</em>&euro;499</strong>
                 <span class="sale">Sale</span>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
             <li>
-                <a href="main.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
-                <a href="main.php" class="title">Elegant evening Dress</a>
+                <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
+                <a href="product.php" class="title">Elegant evening Dress</a>
                 <strong>&euro;499</strong>
             </li>
         </ul>
