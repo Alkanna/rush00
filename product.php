@@ -76,23 +76,22 @@
             </p>
             <p>
                 <select>
-                    <option value="1" selected="selected">Select colour</option>
-                    <option value="Blue">Blue</option>
-                    <option value="Beige">Beige</option>
+                    <option value="1" selected="selected">Select size</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="XLarge">X-Large</option>
+                    <option value="XXLarge">XX-Large</option>
                 </select>
             </p>
             <p>
-                <select disabled="disabled">
-                    <option value="-1">First select a colour</option>
-                </select>
                 <button type="button">Size guide</button>
             </p>
             <p><button type="submit" class="continue">Add to bag</button></p>
             <p><button type="button">Tell a friend</button></p>
         </div>
-        <div id="images">
+        <div id="images" style="padding-bottom: 12px;">
             <a href="images/main.jpg"><img src="images/main.jpg" /></a>
-            <p>Rollover to zoom. Click to enlarge.</p>
             <span class="sale">Sale</span>
         </div>
     </article>

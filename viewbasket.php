@@ -58,7 +58,6 @@
         </div>
     </aside>
     <article id="basket">
-        <button class="continue">Pay securely now</button>
         <h1>Shopping Bag</h1>
         <table width="100" border="1">
             <tr>
@@ -82,7 +81,6 @@
                     <dl>
                         <dt>Product ID</dt>
                         <dd>6442567</dd>
-                        <dt>Colour:</dt>
                         <dd>Light blue</dd>
                         <dt>Size:</dt>
                         <dd>S</dd>
@@ -109,7 +107,6 @@
                     <dl>
                         <dt>Product ID</dt>
                         <dd>1936246</dd>
-                        <dt>Colour:</dt>
                         <dd>Light blue</dd>
                         <dt>Size:</dt>
                         <dd>S</dd>
@@ -136,7 +133,6 @@
                     <dl>
                         <dt>Product ID</dt>
                         <dd>1936246</dd>
-                        <dt>Colour:</dt>
                         <dd>Light blue</dd>
                         <dt>Size:</dt>
                         <dd>S</dd>
@@ -149,7 +145,7 @@
             </tr>
         </table>
 
-        <img src="images/creditcards.gif" class="safe" />
+        <img src="images/creditcards.gif" class="safe" style="padding-right: 10px;" />
         <div class="right">
             <strong>Subtotal before Delivery Charges</strong> <em>&euro;398.00</em><br />
             <p>
@@ -159,7 +155,7 @@
                 </select>
                 <em>&euro;0.00</em>
             </p>
-            <strong>Your total</strong> <em>&euro;398.00</em>
+            <strong style="padding-bottom: 10px;">Your total</strong> <em>&euro;398.00</em>
         </div>
         <button class="continue">Pay securely now</button>
     </article>
