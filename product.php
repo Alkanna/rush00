@@ -92,46 +92,6 @@
             </p>
             <p><button type="submit" class="continue">Add to bag</button></p>
             <p><button type="button">Tell a friend</button></p>
-            <div id="tabs">
-                <ul>
-                    <li><a href="#tabs-1" class="first">Delivery</a></li>
-                    <li><a href="#tabs-2">Returns</a></li>
-                    <li><a href="#tabs-3">Info &amp; Care</a></li>
-                </ul>
-                <section id="tabs-1">
-                    <p><strong>FR Style Saver:</strong> Within 6 working days – FREE</p>
-                    <p>
-                        <strong>FR Standard:</strong> Within 3 working days – €3.95 or
-                        FREE if you spend over €75.00
-                    </p>
-                    <p>
-                        <strong>FR Next Day: </strong>Order by 6pm Weekdays or 2pm Sunday
-                        - €5.95 or FREE if you spend over €100
-                    </p>
-                    <p>
-                        <strong>FR Same day delivery:</strong> Order by 10am Monday -
-                        Sunday you will receive your goods the same day - €7.95
-                    </p>
-                    <p>
-                        <a shape="rect" href="#"
-                            title="View more information on International and FR delivery times">More info on
-                            International and FR delivery times</a>
-                    </p>
-                </section>
-                <section id="tabs-2">
-                    <p>
-                        If you are not completely satisfied with your purchase, simply
-                        return the items to us in their original condition and packaging
-                        within 28 days of receipt and we will issue a full refund
-                        (excluding original delivery charge), or exchange the item for a
-                        different size / colour, if preferred.
-                    </p>
-                    <p>Please <a href="#">click here</a> for further information</p>
-                </section>
-                <section id="tabs-3">
-                    <p>Dry clean only, cashmere or silk so be careful, mkaybi</p>
-                </section>
-            </div>
         </div>
         <div id="images">
             <a href="images/main.jpg"><img src="images/main.jpg" /></a>
