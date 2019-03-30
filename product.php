@@ -97,10 +97,6 @@
             <a href="images/main.jpg"><img src="images/main.jpg" /></a>
             <p>Rollover to zoom. Click to enlarge.</p>
             <span class="sale">Sale</span>
-            <div id="productthumbs">
-                <a href="#"><img src="images/thumb1.jpg" /></a><a href="#"><img src="images/thumb2.jpg" /></a><a
-                    href="#"><img src="images/thumb3.jpg" /></a>
-            </div>
         </div>
     </article>
     <footer>
