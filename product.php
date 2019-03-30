@@ -53,15 +53,15 @@
                 </button>
             </form>
             <div id="action-bar">
-                <a href="login.html">Login/Register</a> //
+                <a href="login.php">Login/Register</a> //
                 <a href="viewbasket.php">Your bag (0)</a>
             </div>
         </div>
     </aside>
     <article id="mainview">
         <div id="breadcrumb">
-            <a href="index.html">Home</a> > <a href="search.html">Dresses</a> >
-            <a href="search.html">Summer Dress</a> > Summer Dress
+            <a href="index.php">Home</a> > <a href="search.php">Dresses</a> >
+            <a href="search.php">Summer Dress</a> > Summer Dress
             <div id="description">
                 <h1>Elegant evening Dress</h1>
                 <strong id="price"><span>previously &pound;299.00</span> &pound;249.00</strong>

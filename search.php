@@ -54,7 +54,7 @@
                 </button>
             </form>
             <div id="action-bar">
-                <a href="login.html">Login/Register</a> //
+                <a href="login.php">Login/Register</a> //
                 <a href="viewbasket.php">Your bag (3) &nbsp; &euro;148</a>
             </div>
         </div>
