@@ -10,7 +10,7 @@ include('login.php');
   </head>
 <body>
   <?php if (isset($_SESSION['loggued_on_user']) && !empty($_SESSION['loggued_on_user'])) : ?>
-  <script type="text/javascript"> window.location = "./administration.php"; </script>
+  <script type="text/javascript"> window.location = "./index.php"; </script>
   <?php elseif ($_GET['register'] == "true") : ?> <!-- REGISTER -->
   <div class="wrapper fadeInDown">
     <div id="formContent">
