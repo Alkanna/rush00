@@ -58,24 +58,8 @@
             </div>
         </div>
     </aside>
-    <article id="mainview">
-        <div id="breadcrumb">
-            <a href="index.html">Home</a> > <a href="search.html">Dresses</a> >
-            <a href="search.html">Summer Dress</a> > Summer Dress
-            <div id="description">
-                <h1>Elegant evening Dress</h1>
-                <strong id="price"><span>previously &pound;299.00</span> &pound;249.00</strong>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                    volutpat ultricies fringilla. Suspendisse iaculis tristique leo, id
-                    adipiscing massa aliquet ut. Etiam adipiscing auctor enim nec
-                    tincidunt. Suspendisse non orci id nisi cursus accumsan id vitae urna.
-                    Donec sit amet elit interdum eros venenatis viverra. Quisque placerat,
-                    nunc quis tristique congue, ante urna semper eros, eleifend tincidunt
-                    metus lacus sed nunc. Aliquam erat volutpat.
-                </p>
-            </div>
-        </div>
+    <article>
+        <a href="search.php"><img src="images/photo.jpg" /></a>
     </article>
     <footer>
         <div class="wrapper">
