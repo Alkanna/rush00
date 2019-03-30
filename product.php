@@ -96,23 +96,23 @@
                         <li><a href="#tabs-3">Info &amp; Care</a></li>
                     </ul>
                     <section id="tabs-1">
-                        <p><strong>UK Style Saver:</strong> Within 6 working days – FREE</p>
+                        <p><strong>FR Style Saver:</strong> Within 6 working days – FREE</p>
                         <p>
-                            <strong>UK Standard:</strong> Within 3 working days – €3.95 or
+                            <strong>FR Standard:</strong> Within 3 working days – €3.95 or
                             FREE if you spend over €75.00
                         </p>
                         <p>
-                            <strong>UK Next Day: </strong>Order by 6pm Weekdays or 2pm Sunday
+                            <strong>FR Next Day: </strong>Order by 6pm Weekdays or 2pm Sunday
                             - €5.95 or FREE if you spend over €100
                         </p>
                         <p>
-                            <strong>UK Same day delivery:</strong> Order by 10am Monday -
+                            <strong>FR Same day delivery:</strong> Order by 10am Monday -
                             Sunday you will receive your goods the same day - €7.95
                         </p>
                         <p>
                             <a shape="rect" href="#"
-                                title="View more information on International and UK delivery times">More info on
-                                International and UK delivery times</a>
+                                title="View more information on International and FR delivery times">More info on
+                                International and FR delivery times</a>
                         </p>
                     </section>
                     <section id="tabs-2">
