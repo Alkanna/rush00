@@ -26,14 +26,14 @@ var_dump($main_cat, $sub_cat, $test);
                 <?php foreach ($main_cat as $key => $value) {
                     ?><ul>
                     <li>
-                        <a href="search.php?cat=<?php echo $main_cat[$key]['id_categoriep']?>">
-                            <?php echo $main_cat[$key]['description_categoriep'] ?></a>
-                        <?php $sscat = get_categories_related_to_P($main_cat[$key]['id_categories']) ?>
+                        <a href="search.php?cat=<?php echo $main_cat[$key]['id_categoriep'];?>">
+                            <?php echo $main_cat[$key]['description_categoriep']; ?></a>
+                        <?php echo "test1"; $sscat = get_categories_related_to_P($main_cat[$key]['id_categories']); echo "test2"; ?>
                         <ul class="sub-menu"><?php
                             foreach ($sscat as $key => $value) {
                                 ?>
-                            <li><a href="search.php?subcat=<?php echo $sscat[$key]['id_categories'] ?>">
-                                    <?php echo $sscat[$key]['description_categories'] ?></a></li>
+                            <li><a href="search.php?subcat=<?php echo $sscat[$key]['id_categories']; ?>">
+                                    <?php echo $sscat[$key]['description_categories']; ?></a></li>
                             <?php } ?>
                         </ul>
 
