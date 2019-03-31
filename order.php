@@ -1,4 +1,7 @@
-<head>
+
+<?php
+    session_start();
+?><head>
     <meta charset="utf-8" />
     <title>Order</title>
     <link rel="stylesheet" href="css/style.css" />
