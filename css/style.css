@@ -494,9 +494,9 @@ body#home {
 }
 
 #home #brand {
-    -webkit-animation: delay 4.5s;
+    -webkit-animation: delay 2.5s;
     animation: 0.5s;
-    -moz-animation: delay 4.5s;
+    -moz-animation: delay 2.5s;
 }
 
 #home nav {
