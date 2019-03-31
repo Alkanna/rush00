@@ -89,8 +89,8 @@ var_dump($main_cat, $sub_cat, $test);
     </aside>
     <article id="grid">
         <div id="breadcrumb">
-            <a href="index.php">Home</a> > <a href="search.php">Dresses</a> >
-            <h1>Summer Dress</h1>
+<!--            <a href="index.php">Home</a> > <a href="search.php">Dresses</a> >
+            <h1>Summer Dress</h1> -->
         </div>
         <header>
 <!--            <strong>Sort by Price: </strong>
