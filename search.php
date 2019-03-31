@@ -73,11 +73,6 @@
             <h1>Summer Dress</h1>
         </div>
         <header>
-            <div class="paging">
-                Page: <a href="">1</a>&nbsp; | &nbsp;2&nbsp; | &nbsp;<a href="">3</a>
-                |
-                <a href="">View All</a>
-            </div>
             <form action="#">
                 <select name="sortBy" id="sortBy">
                     <option value="">Default</option>
@@ -213,13 +208,6 @@
                 <strong>&euro;499</strong>
             </li>
         </ul>
-        <footer>
-            <div class="paging">
-                Page: <a href="">1</a>&nbsp; | &nbsp;2&nbsp; | &nbsp;<a href="">3</a>
-                |
-                <a href="">View All</a>
-            </div>
-        </footer>
     </article>
     <footer>
         <div class="wrapper">
