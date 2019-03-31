@@ -363,19 +363,103 @@ function get_produit($con, $id_produit)
     return ($ret);
 }
 
-function get_categorieS($con)
+function get_categorieS()
 {
+    $con = connect_db();
+
     $req = "SELECT * FROM categorieS";
     $ret = return_req_result($con, $req);
     return ($ret);
 }
 
-function get_categorieP($con)
+function get_categorieP()
 {
+    $con = connect_db();
+
     $req = "SELECT * FROM categorieP";
     $ret = return_req_result($con, $req);
     return ($ret);
 }
+
+function get_categorieP_related_to_S($id_catS)
+{
+    $con = connect_db();
+
+    $req =  "SELECT * FROM categoriep WHERE id_categorieP IN(";
+    $req .= "SELECT id_categorieP FROM relationcat WHERE id_categorieS = ".test_input($id_catS).")";
+    $ret = return_req_result($con, $req);
+    return ($ret);
+}
+
+function get_categorieS_related_to_P($id_catP)
+{
+    $con = connect_db();
+
+    $req =  "SELECT * FROM categories WHERE id_categorieS IN(";
+    $req .= "SELECT id_categorieS FROM relationcat WHERE id_categorieP = ".test_input($id_catP).")";
+    $ret = return_req_result($con, $req);
+    return ($ret);
+}
+
+function get_produit_categorieP($id_catP)
+{
+    $con = connect_db();
+
+    $req = "SELECT * FROM produit WHERE id_categorieS In (";
+    $req .= "SELECT id_categorieS FROM relationcat WHERE id_categorieP = ".test_input($id_catP).")";
+    $ret = return_req_result($con, $req);
+    return ($ret);
+}
+
+
+function get_produit_categorieS($id_catS)
+{
+    $con = connect_db();
+
+    $req = "SELECT * FROM produit WHERE id_categorieS = " . test_input($id_catS);
+    $ret = return_req_result($con, $req);
+    return ($ret);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function add_to_order($id_orders)
 {
@@ -383,16 +467,6 @@ function add_to_order($id_orders)
     $req .= " VALUES ('".test_input($id_iser)."')";
     run_req($con, $req);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 function add_to_panier($con, $id_iser, $date)
