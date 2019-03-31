@@ -52,37 +52,106 @@ h1 {
 }
 
 #title {
-    position: absolute;
+    position: relative;
     top: 1vw;
     margin: 1vw;
     color: grey;
+    text-align: center;
 }
+
+.admin_block{
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+
+.admin_block ul{
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+}
+
 
 .admin_container ul>li:first-child {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
 
-.admin_container ul>li:last-child {
+.admin_container ul li:last-child {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
-
-.admin_container ul li {
-    background-color: white;
-    border: 1px solid grey;
-    list-style: none;
+ul {
+    padding :0;
 }
-
+.admin_block h1 {
+    color: #444444;
+    font-size: 4vw;
+}
+.admin_block li{
+    overflow: hidden;
+}
+.admin_container ul li {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(236, 236, 236));
+    list-style: none;
+    margin-left: -1px;
+    margin-top: -1px;
+    padding: 2vw;
+}
+.admin_block form {
+    padding : 2vw;
+}
+.admin_container ul {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-collapse: collapse;
+}
 .admin_container ul li a {
-    font-size: 2.6vw;
+    font-size: 2.5vw;
     padding: 1.5vw;
     padding-left: 3.5vw;
     padding-right: 3.5vw;
-    text-transform: none;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    
     color: grey;
+
 }
 
+.admin_container ul li:hover a {
+    color: #ff5454;
+
+}
+
+.admin_block h3 {
+    padding-top: 2vw;
+}
+
+@media only screen and (min-width: 1000px) {
+    .admin_container ul li a {
+        font-size: 1vw;
+        padding: 1vw;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+        text-transform: uppercase;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        color: grey;
+    }
+    .admin_block{
+        margin: auto;
+        text-align: center;
+
+        height: 50%;
+    }
+    .admin_block form {
+        padding : 1vw;
+    }
+    .admin_block h1 {
+        color: #444444;
+        font-size: 2.5vw;
+    }
+  }
 /* STRUCTURE */
 
 .wrapper {
@@ -104,8 +173,8 @@ h1 {
     max-width: 450px;
     position: relative;
     padding: 0px;
-    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
@@ -142,8 +211,8 @@ input[type="submit"],
 input[type="reset"] {
     background-color: #ff5454;
     border: none;
+    padding: 2vw 5vw;
     color: white;
-    padding: 15px 80px;
     text-align: left;
     text-decoration: none;
     display: inline-block;
@@ -153,7 +222,10 @@ input[type="reset"] {
     box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
-    margin: 5px 20px 40px 20px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    width:85%;
+    text-align: center;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -163,15 +235,13 @@ input[type="reset"] {
 
 input[type="button"]:hover,
 input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="mail"]:hover {
+input[type="reset"]:hover, {
     background-color: #db7070;
 }
 
 input[type="button"]:active,
 input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="mail"]:active {
+input[type="reset"]:active, {
     -moz-transform: scale(0.95);
     -webkit-transform: scale(0.95);
     -o-transform: scale(0.95);
@@ -179,9 +249,15 @@ input[type="mail"]:active {
     transform: scale(0.95);
 }
 
+option{
+    text-align: left;
+    color: grey;
+}
+
 input[type="text"],
 input[type="number"],
-input[type="password"] {
+input[type="password"],
+select{
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
@@ -190,7 +266,8 @@ input[type="password"] {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 5px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     width: 85%;
     border: 2px solid #f6f6f6;
     -webkit-transition: all 0.5s ease-in-out;
