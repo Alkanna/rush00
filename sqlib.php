@@ -297,7 +297,7 @@ function add_produit($con, $nom_produit, $prix_produit, $qt_produit, $descriptio
     $req .= "VALUES ('" . test_input($nom_produit) . "','" . test_input($prix_produit);
     $req .= "','" . test_input($qt_produit) . "','" . test_input($description_produit);
     $req .= "','". test_input($id_catS)."')";
-//        echo $req."\n".
+        echo $req."\n".
     run_req($con, $req);
 //        echo "ajout produit succeed\n";
 }

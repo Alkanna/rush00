@@ -86,6 +86,7 @@ make_categori_relation(12,3);
 
 
 for ($i = 1; $i < 10; $i++) {
+
     add_produit($con, $nom_produit . $i, $prix_produit . $i, $qt_produit . $i, $description_produit . $i, $i);
 
 
