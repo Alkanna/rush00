@@ -18,7 +18,6 @@ if (isset($_GET['cat'])) {
     else
         $products = get_produit_categories($_GET['subcat']);
     $_SESSION["subcat"] = $_GET['subcat'];
-
 }
 $main_cat = get_categoriep();
 $sub_cat = get_categories();
@@ -93,11 +92,11 @@ var_dump($main_cat, $sub_cat, $test);
             <h1>Summer Dress</h1>
         </div>
         <header>
-            <strong>Sort by Price: </strong>
+<!--            <strong>Sort by Price: </strong>
             <a href="search.php?sort=asc">Ascending</a>
             <strong> / </strong>
             <a href="search.php?sort=desc">Descending</a>
-            </form>
+            </form> -->
         </header>
         <ul id="items">
             <?php
