@@ -44,10 +44,10 @@
         <div class="wrapper">
             <ul id="social">
                 <li>
-                    <a href="#" class="facebook" title="like us us on Facebook">like us us on Facebook</a>
+                    <a href="https://www.facebook.com/42born2code/" class="facebook" title="like us us on Facebook">like us us on Facebook</a>
                 </li>
                 <li>
-                    <a href="#" class="twitter" title="follow us on twitter">follow us on twitter</a>
+                    <a href="https://twitter.com/42born2code" class="twitter" title="follow us on twitter">follow us on twitter</a>
                 </li>
             </ul>
             <form>
