@@ -54,7 +54,7 @@
                 </button>
             </form>
             <div id="action-bar">
-                <a href="login.php">Login/Register</a> //
+                <a href="sign_in.php">Login/Register</a> //
                 <a href="viewbasket.php">Your bag (3) &nbsp; &euro;148</a>
             </div>
         </div>
@@ -75,7 +75,6 @@
                     <option value="">Default</option>
                     <option value="PriceHiLo">Price (High to Low)</option>
                     <option value="PriceLoHi">Price (Low to High)</option>
-                    <option value="pID">Most Recent</option>
                 </select>
                 &nbsp; Showing 26 - 50 of 78 Product(s)
             </form>
