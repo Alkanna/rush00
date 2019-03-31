@@ -89,7 +89,6 @@ include 'sqlib.php';
             <?php
 $con = connect_db();
 $products = get_list_produit($con);
-var_dump($products);
 foreach ($products as $key => $value) {
     ?><li><a href="product.php?id=<?php echo $value['id_produit'] ?>"><img src="images/thumb.png"
                         alt="<?php echo $value['nom_produit'] ?>" /></a>
