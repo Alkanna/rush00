@@ -37,7 +37,7 @@ function install_bd()
     $prix_produit = 24;
     $qt_produit = 42;
     $description_produit = "description";
- 
+
 
     for ($i = 0; $i < 10; $i++) {
         add_produit($con, $nom_produit . $i, $prix_produit . $i, $qt_produit . $i, $description_produit . $i);
@@ -45,32 +45,58 @@ function install_bd()
 
     }
     $cat = "categorie";
-    for ($i = 0; $i < 4; $i++) {
-        add_categorieP($con, $cat.$i);
-    }
+//    for ($i = 0; $i < 4; $i++) {
+        add_categorieP($con, "Tops");
+        add_categorieP($con, "Trousers");
+        add_categorieP($con, "Dresses");
+//    }
 
-    for ($i = 0; $i < 12; $i++) {
-        add_categorieS($con, $cat.$i);
-    }
+ //   for ($i = 0; $i < 12; $i++) {
+        add_categorieS($con, "T-Shirts");
+        add_categorieS($con, "Jumpers");
+        add_categorieS($con, "Cardigans");
+        add_categorieS($con, "Jumpwear");
+        add_categorieS($con, "Bridal Dress");
+        add_categorieS($con, "Cocktail Dress");
+        add_categorieS($con, "Maxi Dress");
+        add_categorieS($con, "Shift Dress");
+        add_categorieS($con, "Summer Dress");
+        add_categorieS($con, "Warp Dress");
+//    }
+
+
+make_categori_relation(0, 0);
+make_categori_relation(1, 0);
+make_categori_relation(2, 0);
+make_categori_relation(3, 0);
+make_categori_relation(4, 1);
+make_categori_relation(5, 2);
+make_categori_relation(6, 2);
+make_categori_relation(7, 2);
+make_categori_relation(8, 2);
+make_categori_relation(9, 2);
+make_categori_relation(10,2);
+make_categori_relation(11,2);
+
 
 //   var_dump($description_produit);
-$id_catS=1;
-    for ($id_catP=1; $id_catP <= 4; $id_catP++) 
-    { 
+/*$id_catS=1;
+    for ($id_catP=1; $id_catP <= 4; $id_catP++)
+    {
         var_dump($id_catP);
-        
+0
 
         while ($id_catS <= ($id_catP * 3) )
-        { 
+        {
            var_dump($id_catS);
             make_categori_relation($id_catS, $id_catP);
             $id_catS++;
         }
     }
-    
+*/
     echo "BD Successfully installed";
 
-    
+
 
 
 

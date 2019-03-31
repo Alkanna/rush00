@@ -2,6 +2,7 @@
 session_start();
 include 'sqlib.php';
 $con = connect_db();
+//if ($_GET['category'] == )
 $products = get_list_produit($con);
 ?>
 <html>
@@ -79,9 +80,9 @@ $products = get_list_produit($con);
         </div>
         <header>
             <strong>Sort by Price: </strong>
-            <a href="search.php?sort=asc">Lo to Hi</a>
+            <a href="search.php?sort=asc">Ascending</a>
             <strong> / </strong>
-            <a href="search.php?sort=desc">Hi to Lo</a>
+            <a href="search.php?sort=desc">Descending</a>
             </form>
         </header>
         <ul id="items">
