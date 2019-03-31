@@ -9,7 +9,7 @@ include 'sqlib.php';
 $con = connect_db();
 $product = get_produit($con, $_GET['id']);
 var_dump($product);
-echo "$product[0]['nom_produit']";
+echo $product[0]['nom_produit'];
 ?>
 
 <head>
