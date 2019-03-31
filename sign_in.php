@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ('login.php');
+include 'login.php';
 ?>
 <html lang="en">
 
@@ -68,9 +68,7 @@ include ('login.php');
                 <input type="password" id="password" class="fadeIn third" name="passwd" placeholder="Password" />
                 <input style="margin-top:35px;margin-bottom:30px;" type="submit" name="submit" class="fadeIn fourth"
                     value="OK" /><?php
-if (start_login() > 0) {?><script type="text/javascript">
-                window.location = "./sign_in.php";
-                </script> <?php } else if (start_login() == -2) {
+if (start_login() == -2) {
     echo "<p>Nom d'utilisateur et/ou mot de passe erroné.</p>";
 }
 ?>
