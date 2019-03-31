@@ -10,7 +10,7 @@ function start_login()
         if (count($id_user) > 0) {
             $_SESSION['loggued_on_user'] = $_POST['login'];
             $_SESSION['id_user'] = $id_user[0]["id_user"];
-//            header('Location: sign_in.php');
+            header('Location: sign_in.php');
         } else {
             return (-2);
         }
