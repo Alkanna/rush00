@@ -106,8 +106,8 @@ $product = get_produit($con, $_GET['id']);
             <p>
                 <button type="button">Size guide</button>
             </p>
-       <!--     <p><a href="viewbasket.php?additem=<?php echo $_GET['id'] . "&" . $_POST['size']; ?>"><button type="submit" class="continue">Add to bag</button></a></p>
-            <p><button type="button">Tell a friend</button></p> -->
+            <p><a href="viewbasket.php?additem=<?php echo $_GET['id']; ?>"><button type="submit" class="continue">Add to bag</button></a></p>
+            <p><button type="button">Tell a friend</button></p>
         </div>
         <div id="images" style="padding-bottom: 12px;">
             <a href="images/main.jpg"><img src="images/main.jpg" /></a>
