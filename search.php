@@ -2,7 +2,11 @@
 session_start();
 include 'sqlib.php';
 $con = connect_db();
-//if ($_GET['category'] == )
+if (isset($_GET['cat'])) {
+    $products = get_produit_categoriep($_GET['cat']);
+} else if (isset($_GET['subcat'])) {
+    $products = get_produit_categories($_GET['subcat']);
+}
 $products = get_list_produit($con);
 $main_cat = get_categoriep();
 $sub_cat = get_categories();
@@ -40,35 +44,6 @@ var_dump($main_cat, $sub_cat, $test);
                     </li>
                 </ul>
                 <?php } ?>
-                <!--                <ul>
-                    <li>
-                        <a href="search.php">Tops</a>
-                        <ul class="sub-menu">
-                            <li><a href="search.php">Tshirts</a></li>
-                            <li><a href="search.php">Jumpers</a></li>
-                            <li><a href="search.php">Cardigans</a></li>
-                            <li><a href="search.php">Knitwear</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="search.php">Trousers</a>
-                        <ul class="sub-menu">
-                            <li><a href="search.php">Formal</a></li>
-                            <li><a href="search.php">Palazzo</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="search.php">Dresses</a>
-                        <ul class="sub-menu">
-                            <li><a href="search.php">Bridal dress</a></li>
-                            <li><a href="search.php">Cocktail dress</a></li>
-                            <li><a href="search.php">Maxi dress</a></li>
-                            <li><a href="search.php">Shift dress</a></li>
-                            <li><a href="search.php">Summer dress</a></li>
-                            <li><a href="search.php">Warp dress</a></li>
-                        </ul>
-                    </li>
-                </ul> -->
             </nav>
         </div>
     </header>
