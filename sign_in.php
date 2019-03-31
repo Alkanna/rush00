@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'login.php';
+    include 'login.php';
 ?>
 <html lang="en">
 
@@ -28,9 +28,6 @@ include 'login.php';
             </a>
             <form action="./create.php" method="POST">
                 <!-- Login Form -->
-                <input style="margin-top:30px" required type="text" id="nom" class="fadeIn second" name="nom"
-                    placeholder="Name" />
-                <input required type="text" id="prenom" class="fadeIn second" name="prenom" placeholder="Lastname" />
                 <input required type="mail" pattern=".+@.+.com" id="mail" class="fadeIn second" name="mail"
                     placeholder="Mail" />
                 <input required type="text" id="login" class="fadeIn second" name="login" minlength="5"

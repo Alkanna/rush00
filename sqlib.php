@@ -36,12 +36,11 @@ function connect_db()
     $user = 'wisk_rush00';
     $pass = 'Dzse21?0';
     $dbname = "wisk_rush00";
-
+    
     $con = mysqli_connect($url, $user, $pass, $dbname);
     if (!$con) {
         die(' Connexion db impossible : ' . mysqli_error($con));
     }
-
     return ($con);
 }
 
@@ -53,7 +52,7 @@ function run_req($con, $req)
 
 }
 
-function return_req_result($con, $req)
+function return_req_result($con, $req)//    $con = connect_db();
 {
     $result = array();
 
@@ -149,28 +148,85 @@ function create_produit_table($con)
     run_req($con, $req);
 //        echo "Table Produit Created\n";
 }
-
-function create_categorie_table($con)
-{
-    $req = "CREATE TABLE IF NOT EXISTS categorie (id_categorie INTEGER NOT NULL AUTO_INCREMENT, ";
-    $req .= "description_categorie VARCHAR(255) NOT NULL, ";
-    $req .= "PRIMARY KEY (id_categorie))";
-//       echo $req."\n".
-    run_req($con, $req);
-//        echo "Table categorie Created\n";
-}
-
+/*
 function create_relation_table($con)
 {
     $req = "CREATE TABLE IF NOT EXISTS relation (id_produit INTEGER NOT NULL, ";
     $req .= "id_categorie  INTEGER NOT NULL, ";
-    $req .= "PRIMARY KEY (id_categorie, id_produit), ";
-    $req .= "FOREIGN KEY (id_categorie) REFERENCES categorie(id_categorie), ";
+    $req .= "PRIMARY KEY (id_categorieP, id_produit), ";
+    $req .= "FOREIGN KEY (id_categorieP) REFERENCES categorieP(id_categorieP), ";
     $req .= "FOREIGN KEY (id_produit) REFERENCES produit(id_produit))";
 //        echo $req."\n".
     run_req($con, $req);
 //        echo "Table relaton Created\n";
 }
+-9*/
+
+function create_relation_table($con)
+{
+    $req = "CREATE TABLE IF NOT EXISTS relationProCat (id_produit INTEGER NOT NULL, ";
+    $req .= "id_categorieS  INTEGER NOT NULL, ";
+    $req .= "PRIMARY KEY (id_categorieS, id_produit), ";
+    $req .= "FOREIGN KEY (id_categorieS) REFERENCES categorieS(id_categorieS), ";
+    $req .= "FOREIGN KEY (id_produit) REFERENCES produit(id_produit))";
+//        echo $req."\n".
+    run_req($con, $req);
+//        echo "Table relaton Created\n";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function create_categorie_principale_table($con)
+{
+    $req = "CREATE TABLE IF NOT EXISTS categorieP (id_categorieP INTEGER NOT NULL AUTO_INCREMENT, ";
+    $req .= "description_categorieP VARCHAR(255) NOT NULL, ";
+    $req .= "PRIMARY KEY (id_categorieP))";
+//       echo $req."\n".
+    run_req($con, $req);
+//        echo "Table categorie Created\n";
+}
+
+function create_categorie_secondaire_table($con)
+{
+    $req = "CREATE TABLE IF NOT EXISTS categorieS ( id_categorieS INTEGER NOT NULL AUTO_INCREMENT, ";
+    $req .= "description_categorieS VARCHAR(255) NOT NULL, ";
+    $req .= "PRIMARY KEY (id_categorieS))";
+//       echo $req."\n".
+    run_req($con, $req);
+//        echo "Table categorie Created\n";
+}
+
+function create_relation_categorie_table($con)
+{
+    $req = "CREATE TABLE IF NOT EXISTS relationcat (id_categorieP INTEGER NOT NULL, ";
+    $req .= "id_categorieS  INTEGER NOT NULL, ";
+    $req .= "PRIMARY KEY (id_categorieP, id_categorieS), ";
+    $req .= "FOREIGN KEY (id_categorieP) REFERENCES categorieP(id_categorieP), ";
+    $req .= "FOREIGN KEY (id_categorieS) REFERENCES categorieS(id_categorieS))";
+//        echo $req."\n".
+    run_req($con, $req);
+//        echo "Table relaton Created\n";
+}
+
 
 function register_root($con)
 {
@@ -218,14 +274,16 @@ function is_mail_exist($con, $mail)
     return (count($ret) > 0 ? 1 : 0);
 }
 
-function register($con, $pseudo_user, $passwd_user, $email_user, $address_user)
+function register($pseudo_user, $passwd_user, $email_user)
 {
+    $con = connect_db();
+
     $req = "INSERT INTO users";
-    $req .= "( pseudo_user, passwd_user, email_user, address_user) ";
-    $req .= "VALUES ('" . test_input($pseudo_user) . "','" . test_input($passwd_user) . "','" . test_input($email_user) . "','" . test_input($address_user) . "')";
-//        echo $req."\n".
+    $req .= "( pseudo_user, passwd_user, email_user) ";
+    $req .= "VALUES ('" . test_input($pseudo_user) . "','" . test_input($passwd_user) . "','" . test_input($email_user) . "')";
+    echo $req."\n".
     run_req($con, $req);
-//        echo "ajout user succeed\n";
+     echo "ajout users succeed\n";
 }
 
 function add_produit($con, $nom_produit, $prix_produit, $qt_produit, $description_produit)
@@ -238,15 +296,43 @@ function add_produit($con, $nom_produit, $prix_produit, $qt_produit, $descriptio
 //        echo "ajout produit succeed\n";
 }
 
-function add_categorie($con, $description_categorie)
+function add_categorieP($con, $description_categorie)
 {
-    $req = "INSERT INTO categorie";
-    $req .= "( description_categorie) ";
+    $req = "INSERT INTO categorieP";
+    $req .= "( description_categorieP) ";
     $req .= "VALUES ('" . test_input($description_categorie). "')";
 //        echo $req."\n".
     run_req($con, $req);
 //        echo "ajout produit succeed\n";
 }
+
+
+function add_categorieS($con, $description_categorie)
+{
+    $req = "INSERT INTO categorieS";
+    $req .= "( description_categorieS) ";
+    $req .= "VALUES ('" . test_input($description_categorie). "')";
+//        echo $req."\n".
+    run_req($con, $req);
+//        echo "ajout produit succeed\n";
+}
+
+
+function make_categori_relation($id_catS, $id_catP)
+{
+    $con = connect_db();
+
+    $req = "INSERT INTO relationcat";
+    $req .= "(id_categorieP, id_categorieS) ";
+    $req .= "VALUES ('" . test_input($id_catP). "', '".test_input($id_catS)."')";
+    run_req($con, $req);
+//        echo "ajout produit succeed\n";
+}
+
+
+
+
+
 
 function get_list_produit($con)
 {
@@ -275,3 +361,43 @@ function get_categorie($con)
     $ret = return_req_result($con, $req);
     return ($ret);
 }
+
+function add_to_order($id_orders)
+{
+    $req =  "INSERT INTO panier(id_orders)";
+    $req .= " VALUES ('".test_input($id_iser)."')";
+    run_req($con, $req);   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function add_to_panier($con, $id_iser, $date)
+{
+    $req =  "INSERT INTO orders(date_orders, id_user)";
+    $req .= " VALUES ('".test_input($date)."','".test_input($id_iser)."')";
+    run_req($con, $req);
+    $id_order = 1;
+    return ($id_order);
+}
+
+function passer_comamnde($id_iser, $date)
+{
+    $con = connect_db();
+
+    //$id_order = add_to_panier($con, $id_iser, $date);
+    add_to_panier($con, $id_iser, $date);
+    //add_to_order($id_order);
+
+    return ($ret);
+}
+
+?>
