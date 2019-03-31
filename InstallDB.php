@@ -82,6 +82,8 @@ make_categori_relation(12,3);
 //make_categori_relation(11,2);
 
 
+    echo "/************************************************/";
+
 
 for ($i = 1; $i < 10; $i++) {
     add_produit($con, $nom_produit . $i, $prix_produit . $i, $qt_produit . $i, $description_produit . $i, $i);

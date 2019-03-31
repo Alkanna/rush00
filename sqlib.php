@@ -36,7 +36,7 @@ function connect_db()
     $user = 'wisk_rush00';
     $pass = 'Dzse21?0';
     $dbname = "wisk_rush00";
-    
+
     $con = mysqli_connect($url, $user, $pass, $dbname);
     if (!$con) {
         die(' Connexion db impossible : ' . mysqli_error($con));
@@ -285,7 +285,7 @@ function register($pseudo_user, $passwd_user, $email_user)
     $req = "INSERT INTO users";
     $req .= "( pseudo_user, passwd_user, email_user) ";
     $req .= "VALUES ('" . test_input($pseudo_user) . "','" . test_input($passwd_user) . "','" . test_input($email_user) . "')";
-    echo $req."\n".
+    //echo $req."\n".
     run_req($con, $req);
      echo "ajout users succeed\n";
 }
@@ -379,7 +379,7 @@ function add_to_order($id_orders)
 {
     $req =  "INSERT INTO panier(id_orders)";
     $req .= " VALUES ('".test_input($id_iser)."')";
-    run_req($con, $req);   
+    run_req($con, $req);
 }
 
 
