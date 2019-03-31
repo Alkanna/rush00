@@ -2,16 +2,20 @@
 
 include 'sqlib.php';
 
-if (connect_mysql_serveur()) {
-    echo "[Server connect : Success !][[ $con ]]\n";
+if ($con = connect_mysql_serveur()) {
+    echo "[Server connect : Success !]\n";
+    var_dump($con);
 } else {
-    echo "[Server connect :Failure !][[ $con ]]\n";
+    echo "[Server connect :Failure !]\n";
+    var_dump($con);
 }
 
 if ($con = connect_db()) {
-    echo "[DB Connect : Success !][[ $con ]]\n";
+    echo "[DB Connect : Success !]\n";
+    var_dump($con);
 } else {
-    echo "[DB Connect : Failure !][[ $con ]]\n";
+    echo "[DB Connect : Failure !]\n";
+    var_dump($con);
 }
 
 if (is_pseudo_exist($con, 'root')) {
