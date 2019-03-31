@@ -1,41 +1,82 @@
-<!--/*
-session_start();
-if (isset($_SESSION['login']) and !empty($_SESSION['login'])) {
-    if (isset($_GET['action'])) {
-        if ($_GET['action'] == 'add_product') {
-            if (isset($_POST['submit'])) {
-                $title = $_POST['title']; // 255 char
-                $description = $_POST['description']; //500 char
-                $price = $_POST['price']; // only digit et only positif
-                $image = $_POST['img'];
-                $quantite = $_POST['qt'];
-
-                if (!($title && $description && $price && $quantite && $ID)) {
-                    echo "Veuillez remplir tous les champs\n";
-                }
-                if (strlen($title) >= 50) {
-                    echo "Titre supérieur à 50 char\n";
-                } elseif (strlen($description) >= 500) {
-                    echo "Description supérieur à 500 char\n";
-                } elseif ($price < 0) {
-                    echo "Tu veux vraiment lui donner du biff?\n";
-                } elseif ($quantite <= 0) {
-                    echo "Quantité strictement positive\n";
-                }
-
-            }
-} elseif ($_GET['action'] == 'add_user') {
-            }
-
-
-    } else {
-
+<?php
+    session_start();
+    if ($_SESSION['login'] != 'root' && $_SESSION['password'] != 'root')
+        header('Location : index.php');
+    function check_if_exists_P()
+    {
+        $tab = get_categoriep();
+        foreach ($tab as $key => $value)
+            foreach ($value as $field)
+                if (!is_numeric($field))
+                    if ($_POST['category_name_p'] == $field)
+                        return 0;
+        return 1;
     }
-} else {
-    header("Location:index.php");
-}
-*/-->
 
+    function check_if_exists_S()
+    {
+        $tab = get_categories();
+        foreach ($tab as $key => $value)
+            foreach ($value as $field)
+                if (!is_numeric($field))
+                    if ($_POST['category_name_s'] == $field)
+                        return 0;
+        return 1;
+    }
+    function get_id_categorie_P()
+    {
+        $tab = get_categoriep();
+        $cate_name_p = $_POST['category_name_P'];
+        foreach ($tab as $key => $value)
+            foreach ($value as $field)
+                if (is_numeric($field))
+                {
+                    echo "field >>>> " ;print_r($field['description_categoriep']."\n");
+                    //echo "print r >>>>>> " ;print_r($_POST['category_name_P']);
+                    if ($_POST['category_name_P'] == $field['description_categoriep'])
+                        return $field['id_categoriep'];
+                }
+        return -1;
+    }
+    if ($_POST['submit'] && !empty($_POST['submit']) && $_POST['category_name_s'] && !empty(trim($_POST['category_name_s'])))
+    {
+        if ($_GET['action'] == "add_categorie")
+        {
+            $description_categorie = $_POST['category_name_s'];
+            include('../sqlib.php');
+            if (check_if_exists_S())
+            {
+                add_categories(connect_db(), $description_categorie);
+                $tab_s = get_categories();
+                $endtab_s = end($tab_s);
+                
+                $id_s = $endtab['id_categories'];
+                $id_p = get_id_categorie_P();
+                var_dump($id_p);
+                make_categori_relation($id_s, $id_p);
+                echo $description_categorie ."Successfully added\n";
+            }
+            else
+                echo "Error in relation\n";
+        }
+    } 
+    
+        if ($_POST['submit'] && !empty($_POST['submit']) && $_POST['category_name_p'] && !empty(trim($_POST['category_name_p'])))
+        {
+            if ($_GET['action'] == "add_categorie")
+            {
+                $description_categorie = $_POST['category_name_p'];
+                include('../sqlib.php');
+                if (check_if_exists_P())
+                {
+                    add_categoriep(connect_db(), $description_categorie);
+                    echo $description_categorie ."Successfully added\n";
+                }
+            else
+                echo "Category already exist.\n";
+            }
+        } 
+?>
 <html>
 
 <head>
@@ -117,15 +158,24 @@ if (isset($_SESSION['login']) and !empty($_SESSION['login'])) {
                 <?php if ($_GET['action'] == "add_categorie") : ?>
                 <li><a>Ajouter une catégorie principale</a></li>
                     <form style="margin-top:1.2vw" method="post">
-                        <input required type="text" name="category_name_p" placeholder="Nom de la catégorie" />
+                        <input maxlength="50" required type="text" name="category_name_p" placeholder="Nom de la catégorie" />
                         <input type="submit" name="submit" value="ajouter" />
                      </form>
                     <li><a>Ajouter une catégorie secondaire</a></li>
                     <form style="margin-top:1.2vw;" action="" method="post">
                         <select>
                         <option value="" disabled selected>Catégorie Parent</option>
-                        <option>1</option>
-                        <option>1</option>
+                        <?php 
+                            include('../sqlib.php');
+                            $tab = get_categories();
+                            foreach ($tab as $key => $value)
+                                foreach ($value as $field)
+                                    if (!is_numeric($field))
+                                    {
+                                        echo "<option>"."$field"."</option>";
+                                        $_POST['categorie_name_P'] = $field;
+                                    }
+                        ?>
                         </select>
                         <input required type="text" name="category_name_s" placeholder="Nom de la catégorie" />
                         <input type="submit" name="submit" value="ajouter" />
@@ -136,8 +186,14 @@ if (isset($_SESSION['login']) and !empty($_SESSION['login'])) {
                     <form style="margin-top:1.2vw" action="" method="post">
                     <select>
                         <option value="" disabled selected>Nom de la catégorie</option>
-                        <option>1</option>
-                        <option>1</option>
+                        <?php 
+                            include('../sqlib.php');
+                            $tab = get_categoriep();
+                            foreach ($tab as $key => $value)
+                                foreach ($value as $field)
+                                    if (!is_numeric($field))
+                                    echo "<option>"."$field"."</option>";
+                        ?>
                         </select>
                         <input required type="text" name="category_name_p" placeholder="Nouveau nom" />
                         <input type="submit" name="submit" value="modifier" />
@@ -148,15 +204,14 @@ if (isset($_SESSION['login']) and !empty($_SESSION['login'])) {
                     <form style="margin-top:1.2vw" action="" method="post">
                     <select>
                         <option value="" disabled selected>Choisir une catégorie</option>
-                        
-                        
-                        
-                        <option>1</option>
-                        <option>1</option>
-                        
-                    
-                    
-                    
+                        <?php 
+                            include('../sqlib.php');
+                            $tab = get_categoriep();
+                            foreach ($tab as $key => $value)
+                                foreach ($value as $field)
+                                    if (!is_numeric($field))
+                                    echo "<option>"."$field"."</option>";
+                        ?>
                         </select>
                         <input type="submit" name="submit" value="surpprimer" />
                      </form>

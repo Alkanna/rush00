@@ -21,6 +21,7 @@ function auth_admin()
         if ($username && $password) {
             if ($username == $user && $password == $password_def) {
                 $_SESSION['login'] = $username;
+                $_SESSION['password'] = $password;
                 return 1;
             } else {
                 return 2;
