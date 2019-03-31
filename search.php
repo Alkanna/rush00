@@ -86,7 +86,7 @@
         <ul id="items">
             <?php
             $con = connect_db();
-            $products = get_list_produit();
+            $products = get_list_produit($con);
             var_dump($products);
             ?>
             <li>
