@@ -22,7 +22,15 @@ var_dump($main_cat, $sub_cat);
         <div class="wrapper">
             <h1><a href="index.php" id="brand" title="Rush00">Rush00</a></h1>
             <nav>
-                <ul>
+                <?php foreach ($main_cat as $key => $value) {
+                    ?><ul>
+                        <li>
+                            <a href="search.php?cat=<?php echo $main_cat[$key][$id_categorieP]?>">
+                            <?php echo $main_cat[$key][$description_categorieP] ?></a>
+                </li>
+                </ul>
+               <?php } ?>
+<!--                <ul>
                     <li>
                         <a href="search.php">Tops</a>
                         <ul class="sub-menu">
@@ -50,7 +58,7 @@ var_dump($main_cat, $sub_cat);
                             <li><a href="search.php">Warp dress</a></li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
             </nav>
         </div>
     </header>
