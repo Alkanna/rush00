@@ -103,7 +103,7 @@
                 </div>
                 <div class="row">
                     <input type="submit" value="Submit" class="btn">
-                    <input type="submit" value="cancel" class="btn">
+                    <input type="submit" value="Cancel" class="btn">
                 </div>
             </form>
         </element>
