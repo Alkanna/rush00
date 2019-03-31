@@ -28,7 +28,7 @@ var_dump($main_cat, $sub_cat, $test);
                     <li>
                         <a href="search.php?cat=<?php echo $main_cat[$key]['id_categoriep']?>">
                             <?php echo $main_cat[$key]['description_categoriep'] ?></a>
-                        <?php $sscat = get_categories_related_to_P($main_cat[$key]['id_categoriesp']) ?>
+                        <?php $sscat = get_categories_related_to_P($main_cat[$key]['id_categories']) ?>
                         <ul class="sub-menu"><?php
                             foreach ($sscat as $key => $value) {
                                 ?>
