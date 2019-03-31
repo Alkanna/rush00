@@ -2,7 +2,6 @@
 session_start();
 include 'sqlib.php';
 $con = connect_db();
-var_dump($_GET['cat']);
 if (isset($_GET['cat'])) {
     if ($_SESSION["cat"] && $_GET['sort'] == "asc")
         $products = get_produit_categoriep($_SESSION["cat"]);
@@ -23,7 +22,6 @@ if (isset($_GET['cat'])) {
     $products = get_list_produit($con);
 $main_cat = get_categoriep();
 $sub_cat = get_categories();
-var_dump($_GET['cat']);
 ?>
 <html>
 
