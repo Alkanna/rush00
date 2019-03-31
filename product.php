@@ -1,15 +1,15 @@
 <?php
-    session_start();
-    if ($_GET['id'] == NULL) {
-        header("HTTP/1.0 404 Not Found");
-        header("Refresh: 0; url=/404.php"); // or just include 404 and don't display the rest ?
-        exit();
-    }
-    include ('sqlib.php');
-    $con = connect_db();
-    $product = get_produit($con, $_GET['id']);
-    var_dump($product);
+session_start();
+if ($_GET['id'] == null) {
+    header("HTTP/1.0 404 Not Found");
+    header("Refresh: 0; url=/404.php"); // or just include 404 and don't display the rest ?
+    exit();
+}
+include 'sqlib.php';
+$con = connect_db();
+$product = get_produit($con, $_GET['id']);
 ?>
+
 <head>
     <meta charset="utf-8" />
     <title>Produit</title>
@@ -52,10 +52,12 @@
         <div class="wrapper">
             <ul id="social">
                 <li>
-                    <a href="https://www.facebook.com/42born2code/" class="facebook" title="like us us on Facebook">like us us on Facebook</a>
+                    <a href="https://www.facebook.com/42born2code/" class="facebook" title="like us us on Facebook">like
+                        us us on Facebook</a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/42born2code" class="twitter" title="follow us on twitter">follow us on twitter</a>
+                    <a href="https://twitter.com/42born2code" class="twitter" title="follow us on twitter">follow us on
+                        twitter</a>
                 </li>
             </ul>
             <form>
@@ -64,12 +66,12 @@
                 </button>
             </form>
             <div id="action-bar">
-            <?php if (isset($_SESSION['loggued_on_user']) && !empty($_SESSION['loggued_on_user'])) : ?>
+                <?php if (isset($_SESSION['loggued_on_user']) && !empty($_SESSION['loggued_on_user'])): ?>
                 <a href="administration.php">My Account</a> /
                 <a href="logout.php">Logout</a> /
-            <?php else : ?>
+                <?php else: ?>
                 <a href="sign_in.php">Login/Register</a> /
-            <?php endif;?>
+                <?php endif;?>
                 <a href="viewbasket.php">Your bag (0)</a>
             </div>
         </div>
@@ -80,7 +82,7 @@
             <a href="search.php">Summer Dress</a> > Summer Dress
         </div>
         <div id="description">
-            <h1><?php  ?></h1>
+            <h1><?php echo $product['nom_produit'];?></h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 volutpat ultricies fringilla. Suspendisse iaculis tristique leo, id
