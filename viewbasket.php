@@ -1,7 +1,6 @@
 <?php
     session_start();
     include ('sqlib.php');
-    var_dump($_GET['additem']);
     if ($_GET['additem'] != null)
         $_SESSION['items'][] = $_GET['additem'];
     $con = connect_db();
