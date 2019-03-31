@@ -94,7 +94,7 @@ $product = get_produit($con, $_GET['id']);
                 <?php echo $product[0]['description_produit']; ?>
             </p>
             <p>
-                <select>
+                <select name="size">
                     <option value="Init" selected="selected">Select size</option>
                     <option value="Small">Small</option>
                     <option value="Medium">Medium</option>
@@ -106,7 +106,7 @@ $product = get_produit($con, $_GET['id']);
             <p>
                 <button type="button">Size guide</button>
             </p>
-            <p><a href="viewbasket.php?additem=<?php echo $_GET['id'] ?>"><button type="submit" class="continue">Add to bag</button></a></p>
+            <p><a href="viewbasket.php?additem=<?php echo $_GET['id'] . "&" . $_POST['size'] ?>"><button type="submit" class="continue">Add to bag</button></a></p>
             <p><button type="button">Tell a friend</button></p>
         </div>
         <div id="images" style="padding-bottom: 12px;">
