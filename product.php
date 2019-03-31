@@ -69,7 +69,6 @@
         </div>
         <div id="description">
             <h1>Elegant evening Dress</h1>
-            <strong id="price"><span>previously &euro;299.00</span> &euro;249.00</strong>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 volutpat ultricies fringilla. Suspendisse iaculis tristique leo, id
@@ -97,7 +96,6 @@
         </div>
         <div id="images" style="padding-bottom: 12px;">
             <a href="images/main.jpg"><img src="images/main.jpg" /></a>
-            <span class="sale">Sale</span>
         </div>
     </article>
     <footer>
