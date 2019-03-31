@@ -156,7 +156,8 @@ function create_produit_table($con)
     $req .= "description_produit VARCHAR(255) NOT NULL, ";
     $req .= "id_categorieS INTEGER NOT NULL, ";
 //        $req .= "image_produit INTEGER NOT NULL, ";
-    $req .= "PRIMARY KEY (id_produit))";
+    $req .= "PRIMARY KEY (id_produit), ";
+    $req .= "FOREIGN KEY (id_categorieS) REFERENCES categorieS(id_categorieS)) ";
 //        echo $req."\n".
     run_req($con, $req);
 //        echo "Table Produit Created\n";

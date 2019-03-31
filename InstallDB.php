@@ -10,9 +10,9 @@ function install_bd()
     $con = connect_db();
 
     create_users_table($con);
+    create_categorie_secondaire_table($con);
     create_produit_table($con);
     create_categorie_principale_table($con);
-    create_categorie_secondaire_table($con);
 
     create_relation_categorie_table($con);
 
