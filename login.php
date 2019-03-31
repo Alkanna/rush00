@@ -1,5 +1,5 @@
 <?php
-include("./auth.php");
+include("sqlib.php");
     function start_login()
     {
         if ($_POST['submit'] == "OK")
@@ -15,7 +15,7 @@ include("./auth.php");
                 $_SESSION['id_user'] = $id_user[0]["id_user"];
                 header('Location: sign_in.php');
             }
-            else 
+            else
                 return (-2);
         }
     }
