@@ -150,7 +150,7 @@
             </tr>
         </table>
 
-        <img src="images/creditcards.gif" class="safe" style="padding-right: 10px;" />
+        <img src="images/creditcards.gif" class="safe" style="padding-right: 10px; margin-top: 20px;"" />
         <div class="right">
             <strong>Subtotal before Delivery Charges</strong> <em>&euro;398.00</em><br />
             <p>
@@ -162,7 +162,7 @@
             </p>
             <strong style="padding-bottom: 10px;">Your total</strong> <em>&euro;398.00</em>
         </div>
-        <button class="continue" href="order.php">Pay securely now</button>
+        <button class="continue" href="order.php" style="margin-top: 10px;">Pay securely now</button>
     </article>
     <footer>
         <div class="wrapper">
