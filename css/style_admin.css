@@ -225,6 +225,8 @@ input[type="mail"] {
 }
 
 input[type="text"]:focus,
+input[type="number"],
+input[type="password"],
 input[type="mail"]:focus {
     background-color: #fff;
     border-bottom: 2px solid #5fbae9;
