@@ -1,6 +1,8 @@
 <?php
 session_start();
 include 'sqlib.php';
+$con = connect_db();
+$products = get_list_produit($con);
 ?>
 <html>
 
@@ -87,15 +89,18 @@ include 'sqlib.php';
         </header>
         <ul id="items">
             <?php
-$con = connect_db();
-$products = get_list_produit($con);
-foreach ($products as $key => $value) {
-    ?><li><a href="product.php?id=<?php echo $value['id_produit'] ?>"><img src="images/thumb.png"
-                        alt="<?php echo $value['nom_produit'] ?>" /></a>
-                <a href="product.php?id=<?php $value['id_produit']?>"
-                    class="title"><?php echo $value['nom_produit'] ?></a>
-                <strong><?php echo $value['prix_produit']; ?>&euro;</strong>
-            </li><?php
+foreach ($products as $key => $value) {?>
+            <li>
+                <a href="product.php?id=<?php echo $value['id_produit'] ?>"><img src="images/thumb.png"
+                        alt="<?php echo $value['nom_produit'] ?>" />
+                </a>
+                <a href="product.php?id=<?php $value['id_produit']?>" class="title"><?php echo $value['nom_produit'] ?>
+                </a>
+                <strong>
+                    <?php echo $value['prix_produit']; ?>&euro;
+                </strong>
+            </li>
+            <?php
 }
 ?>
             <!-- THIS IS THE PRODUCT DISPLAY MODEL DONT REMOVE
