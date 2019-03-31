@@ -65,18 +65,17 @@ function install_bd()
 //    }
 
 
-//make_categori_relation(0, 0);
-/*make_categori_relation(1, 0);
-make_categori_relation(2, 0);
-make_categori_relation(3, 0);
-make_categori_relation(4, 1);*/
-make_categori_relation(5, 2);
-make_categori_relation(6, 2);
-make_categori_relation(7, 2);
-make_categori_relation(8, 2);
-make_categori_relation(9, 2);
-make_categori_relation(10,2);
-make_categori_relation(11,2);
+make_categori_relation(1, 1);
+make_categori_relation(2, 1);
+make_categori_relation(3, 1);
+make_categori_relation(4, 2);
+make_categori_relation(5, 3);
+make_categori_relation(6, 3);
+make_categori_relation(7, 3);
+make_categori_relation(8, 3);
+make_categori_relation(9, 3);
+make_categori_relation(10,3);
+//make_categori_relation(11,2);
 
 
 //   var_dump($description_produit);
