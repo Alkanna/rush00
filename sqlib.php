@@ -55,6 +55,8 @@ function run_req($con, $req)
 
 function return_req_result($con, $req)
 {
+    $result = array();
+
     if (!mysqli_query($con, $req)) {
         die('Error exec req : ' . mysqli_error($con));
     }
