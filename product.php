@@ -79,22 +79,18 @@ $product = get_produit($con, $_GET['id']);
     <article id="mainview">
         <div id="breadcrumb">
             <a href="index.php">Home</a> > <a href="search.php">Dresses</a> >
-            <a href="search.php">Summer Dress</a> > Summer Dress
+            <a href="search.php">Summer Dress</a> > <?php echo $product['nom_produit']; ?>
         </div>
         <div id="description">
-            <h1><?php echo $product['nom_produit'];?></h1>
+            <h1>
+                <?php echo $product['nom_produit']; ?>
+            </h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                volutpat ultricies fringilla. Suspendisse iaculis tristique leo, id
-                adipiscing massa aliquet ut. Etiam adipiscing auctor enim nec
-                tincidunt. Suspendisse non orci id nisi cursus accumsan id vitae urna.
-                Donec sit amet elit interdum eros venenatis viverra. Quisque placerat,
-                nunc quis tristique congue, ante urna semper eros, eleifend tincidunt
-                metus lacus sed nunc. Aliquam erat volutpat.
+                <?php echo $product['description_produit']; ?>
             </p>
             <p>
                 <select>
-                    <option value="1" selected="selected">Select size</option>
+                    <option value="Init" selected="selected">Select size</option>
                     <option value="Small">Small</option>
                     <option value="Medium">Medium</option>
                     <option value="Large">Large</option>
