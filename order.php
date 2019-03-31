@@ -57,7 +57,7 @@
             </div>
         </div>
     </aside>
-    <article id="address">
+    <article id="address" style="margin-top: 0px;padding-top: 5px;padding-bottom: 20px;">
         <element id="form">
             <form id="orderform">
                 <div class="area">
@@ -107,9 +107,6 @@
                 </div>
             </form>
         </element>
-        <p>
-            <button type="button">Go back</button>
-        </p>
     </article>
     <footer>
         <div class="wrapper">
