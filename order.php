@@ -58,260 +58,54 @@
         </div>
     </aside>
     <article id="address">
-        <form>
-            <h1>Billing address</h1>
-            <p>
-                <label for="billFName">First name:</label>
-                <input id="billFName" name="billFName" type="text" required="true" /><span class="alert">*</span>
-            </p>
-            <p>
-                <label for="billLName">Last name:</label>
-                <input id="billLName" name="billLName" type="text" required="true" /><span class="alert">*</span>
-            </p>
-            <p>
-                <label for="billAddress1">Address:</label>
-                <input id="billAddress1" name="billAddress1" type="text" required="true" /><span class="alert">*</span>
-            </p>
-            <p>
-                <label for="billAddress2">&nbsp;</label>
-                <input id="billAddress2" name="billAddress2" type="text" />
-            </p>
-            <p>
-                <label for="billCity">City:</label>
-                <input id="billCity" name="billCity" type="text" required="true" /><span class="alert">*</span>
-            </p>
-            <p>
-                <label for="billCountry">Country:</label>
-                <select id="billCountry" name="billCountry" required="true">
-                    <option value="AR">Argentina</option>
-                    <option value="AW">Aruba</option>
-                    <option value="AU">Australia</option>
-                    <option value="BS">Bahamas</option>
-                    <option value="BB">Barbados</option>
-                    <option value="BE">Belgium</option>
-                    <option value="BM">Bermuda</option>
-                    <option value="BR">Brazil</option>
-                    <option value="CA">Canada</option>
-                    <option value="KY">Cayman Islands</option>
-                    <option value="CL">Chile</option>
-                    <option value="CN">China (People's Republic)</option>
-                    <option value="CX">Christmas Island</option>
-                    <option value="CR">Costa Rica</option>
-                    <option value="CY">Cyprus</option>
-                    <option value="DK">Denmark</option>
-                    <option value="EG">Egypt</option>
-                    <option value="FI">Finland</option>
-                    <option value="FR" selected="selected">France</option>
-                    <option value="DE">Germany</option>
-                    <option value="GR">Greece</option>
-                    <option value="GU">Guam</option>
-                    <option value="GT">Guatemala</option>
-                    <option value="HK">Hong Kong</option>
-                    <option value="IS">Iceland</option>
-                    <option value="IE">Ireland (Republic of Ireland)</option>
-                    <option value="IL">Israel</option>
-                    <option value="IT">Italy</option>
-                    <option value="JM">Jamaica</option>
-                    <option value="JP">Japan</option>
-                    <option value="KW">Kuwait</option>
-                    <option value="LU">Luxembourg</option>
-                    <option value="MW">Malawi</option>
-                    <option value="MX">Mexico</option>
-                    <option value="MC">Monaco</option>
-                    <option value="NL">Netherlands (Holland)</option>
-                    <option value="AN">Netherlands Antilles</option>
-                    <option value="NZ">New Zealand</option>
-                    <option value="NO">Norway</option>
-                    <option value="PA">Panama</option>
-                    <option value="PE">Peru</option>
-                    <option value="PH">Philippines</option>
-                    <option value="PL">Poland</option>
-                    <option value="PT">Portugal</option>
-                    <option value="PR">Puerto Rico</option>
-                    <option value="SA">Saudi Arabia</option>
-                    <option value="SG">Singapore</option>
-                    <option value="ZA">South Africa</option>
-                    <option value="KP">South Korea (Republic of Korea)</option>
-                    <option value="ES">Spain</option>
-                    <option value="SE">Sweden</option>
-                    <option value="CH">Switzerland</option>
-                    <option value="TW">Taiwan</option>
-                    <option value="TH">Thailand</option>
-                    <option value="TT">Trinidad and Tobago</option>
-                    <option value="TR">Turkey</option>
-                    <option value="AE">United Arab Emirates</option>
-                    <option value="GB">United Kingdom</option>
-                    <option value="US">United States</option>
-                    <option value="UM">United States Minor Outlying Islands</option>
-                    <option value="VE">Venezuela</option>
-                    <option value="VG">Virgin Islands (British)</option>
-                </select>
-            </p>
-            <p>
-                <label for="billZip">Post code:</label>
-                <input id="billZip" name="billZip" type="text" required="true" /><span class="alert">*</span>
-            </p>
-            <p>
-                <label for="billEqualShip">Ship to this address</label>
-                <input name="billEqualShip" type="checkbox" id="billEqualShip" value="Y" checked />
-            </p>
-            <p>
-                <label for="email">Email:</label>
-                <input id="email" name="email" type="email" required="true" /><span class="alert">*</span>
-            </p>
-            <p>
-                <label for="phone">Phone:</label>
-                <span style="display: none;" class="helper">Please enter your <strong>phone number</strong>.<br />We
-                    might need
-                    to contact you with regards to your order.</span>
-                <input id="phone" name="phone" type="tel" required="true" /><span class="alert">*</span>
-            </p>
-        </form>
-        <form id="ship">
-            <h1>Shipping address</h1>
-            <p>
-                <label for="shipFName">First name:</label>
-                <input name="shipFName" type="text" id="shipFName" required="true" /><span class="alert">*</span>
-            </p>
-            <p>
-                <label for="shipLName">Last name:</label>
-                <input id="shipLName" type="text" name="shipLName" required="true" /><span class="alert">*</span>
-            </p>
-            <p>
-                <label for="shipAddress1">Address:</label>
-                <input name="shipAddress1" type="text" id="shipAddress1" required="true" /><span class="alert">*</span>
-            </p>
-            <p>
-                <label for="shipAddress2">&nbsp;</label>
-                <input name="shipAddress2" type="text" id="shipAddress2" />
-            </p>
-            <p>
-                <label for="shipCity">City:</label>
-                <input name="shipCity" type="text" id="shipCity" required="true" /><span class="alert">*</span>
-            </p>
-            <p>
-                <label for="shipCountry">Country:</label>
-                <select id="shipCountry" name="shipCountry" required="true">
-                    <option value="AR">Argentina</option>
-                    <option value="AW">Aruba</option>
-                    <option value="AU">Australia</option>
-                    <option value="BS">Bahamas</option>
-                    <option value="BB">Barbados</option>
-                    <option value="BE">Belgium</option>
-                    <option value="BM">Bermuda</option>
-                    <option value="BR">Brazil</option>
-                    <option value="CA">Canada</option>
-                    <option value="KY">Cayman Islands</option>
-                    <option value="CL">Chile</option>
-                    <option value="CN">China (People's Republic)</option>
-                    <option value="CX">Christmas Island</option>
-                    <option value="CR">Costa Rica</option>
-                    <option value="CY">Cyprus</option>
-                    <option value="DK">Denmark</option>
-                    <option value="EG">Egypt</option>
-                    <option value="FI">Finland</option>
-                    <option value="FR" selected="selected">France</option>
-                    <option value="DE">Germany</option>
-                    <option value="GR">Greece</option>
-                    <option value="GU">Guam</option>
-                    <option value="GT">Guatemala</option>
-                    <option value="HK">Hong Kong</option>
-                    <option value="IS">Iceland</option>
-                    <option value="IE">Ireland (Republic of Ireland)</option>
-                    <option value="IL">Israel</option>
-                    <option value="IT">Italy</option>
-                    <option value="JM">Jamaica</option>
-                    <option value="JP">Japan</option>
-                    <option value="KW">Kuwait</option>
-                    <option value="LU">Luxembourg</option>
-                    <option value="MW">Malawi</option>
-                    <option value="MX">Mexico</option>
-                    <option value="MC">Monaco</option>
-                    <option value="NL">Netherlands (Holland)</option>
-                    <option value="AN">Netherlands Antilles</option>
-                    <option value="NZ">New Zealand</option>
-                    <option value="NO">Norway</option>
-                    <option value="PA">Panama</option>
-                    <option value="PE">Peru</option>
-                    <option value="PH">Philippines</option>
-                    <option value="PL">Poland</option>
-                    <option value="PT">Portugal</option>
-                    <option value="PR">Puerto Rico</option>
-                    <option value="SA">Saudi Arabia</option>
-                    <option value="SG">Singapore</option>
-                    <option value="ZA">South Africa</option>
-                    <option value="KP">South Korea (Republic of Korea)</option>
-                    <option value="ES">Spain</option>
-                    <option value="SE">Sweden</option>
-                    <option value="CH">Switzerland</option>
-                    <option value="TW">Taiwan</option>
-                    <option value="TH">Thailand</option>
-                    <option value="TT">Trinidad and Tobago</option>
-                    <option value="TR">Turkey</option>
-                    <option value="AE">United Arab Emirates</option>
-                    <option value="GB">United Kingdom</option>
-                    <option value="US">United States</option>
-                    <option value="UM">United States Minor Outlying Islands</option>
-                    <option value="VE">Venezuela</option>
-                    <option value="VG">Virgin Islands (British)</option>
-                </select>
-            </p>
-            <p>
-                <label for="shipZip">Post code:</label>
-                <input name="shipZip" type="text" id="shipZip" required="true" /><span class="alert">*</span>
-            </p>
-            <p>
-                <label>&nbsp;</label><button type="submit" class="continue">Continue</button>
-            </p>
-        </form>
-        <form id="myform">
-  <header>Shipping Order Form</header>
-  <div class="area">
-    <div class="row">
-      <div class="col2">
-        <input type="text" name="firstname">
-        <label for="fistname">First Name</label>
-      </div>
-      <div class="col2">
-        <input type="text" name="lastname">
-        <label for="lastname">Last Name</label>
-      </div>
-    </div>
-    <div class="row">
-      <input type="text" name="phone" id="phone">
-      <label for="phone">Phone</label>
-    </div>
-    <div class="row">
-      <input type="text" name="address" id="address">
-      <label for="address">Address</label>
-    </div>
+        <form id="orderform">
+            <header>Shipping Order Form</header>
+            <div class="area">
+                <div class="row">
+                    <div class="col2">
+                        <input type="text" name="firstname">
+                        <label for="fistname">First Name</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" name="lastname">
+                        <label for="lastname">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="text" name="phone" id="phone">
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="row">
+                    <input type="text" name="address" id="address">
+                    <label for="address">Address</label>
+                </div>
 
-  </div>
-  <div class="area">
-    <div class="ckeckarea">
-      <input type="checkbox" name="checkbox1" id="checkbox1" onclick="autofilling(this.form)">
-      <label for="checkbox1">Check this box if order info and sending info are the same.</label>
-    </div>
-    <div class="row">
-      <div class="col2">
-        <input type="text" name="newfirstname">
-        <label for="newfistname">First Name</label>
-      </div>
-      <div class="col2">
-        <input type="text" name="newlastname">
-        <label for="newlastname">Last Name</label>
-      </div>
-    </div>
-    <div class="row">
-      <input type="text" name="newaddress" id="newaddress">
-      <label for="newaddress">Sending Address</label>
-    </div>
-  </div>
-  <div class="row">
-    <input type="submit" value="Submit" class="btn">
-    <input type="submit" value="cancel" class="btn">
-  </div>
-</form>
+            </div>
+            <div class="area">
+                <div class="ckeckarea">
+                    <input type="checkbox" name="checkbox1" id="checkbox1" onclick="autofilling(this.form)">
+                    <label for="checkbox1">Check this box if order info and sending info are the same.</label>
+                </div>
+                <div class="row">
+                    <div class="col2">
+                        <input type="text" name="newfirstname">
+                        <label for="newfistname">First Name</label>
+                    </div>
+                    <div class="col2">
+                        <input type="text" name="newlastname">
+                        <label for="newlastname">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="text" name="newaddress" id="newaddress">
+                    <label for="newaddress">Sending Address</label>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit" class="btn">
+                <input type="submit" value="cancel" class="btn">
+            </div>
+        </form>
         <p>
             <button type="button">Go back</button>
         </p>
