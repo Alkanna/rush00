@@ -1,7 +1,6 @@
 <?php
     session_start();
     include ('InstallDB.php');
-    install_db();
 ?>
 <html>
 
