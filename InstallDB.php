@@ -79,3 +79,6 @@ print_r($list_produit);
     echo "BD Successfully installed";
 
 }
+
+install_bd();
+?>
