@@ -78,9 +78,10 @@ $products = get_list_produit($con);
             <h1>Summer Dress</h1>
         </div>
         <header>
-            <a href="search.php?sort=asc">Sort by Price (Lo to Hi)</a>
-            <a href="search.php?sort=desc">Sort by Price (Hi to Lo)</a>
-                &nbsp; Showing 26 - 50 of 78 Product(s)
+            <strong>Sort by Price: </strong>
+            <a href="search.php?sort=asc">Lo to Hi</a>
+            <strong> / </strong>
+            <a href="search.php?sort=desc">Hi to Lo</a>
             </form>
         </header>
         <ul id="items">
