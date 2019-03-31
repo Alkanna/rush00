@@ -1,7 +1,7 @@
 <?php
 session_start();
-echo "43264";
 include ('login.php');
+echo "43264";
 ?>
 <html lang="en">
 
