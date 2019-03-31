@@ -497,6 +497,7 @@ body#home {
     -webkit-animation: delay 4.5s;
     animation: 0.5s;
     -moz-animation: delay 4.5s;
+    margin-top: 25px;
 }
 
 #home nav {
