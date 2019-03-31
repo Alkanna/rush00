@@ -58,54 +58,56 @@
         </div>
     </aside>
     <article id="address">
-        <form id="orderform">
-            <header>Shipping Order Form</header>
-            <div class="area">
-                <div class="row">
-                    <div class="col2">
-                        <input type="text" name="firstname">
-                        <label for="fistname">First Name</label>
+        <element id="form">
+            <form id="orderform">
+                <header>Shipping Order Form</header>
+                <div class="area">
+                    <div class="row">
+                        <div class="col2">
+                            <input type="text" name="firstname">
+                            <label for="fistname">First Name</label>
+                        </div>
+                        <div class="col2">
+                            <input type="text" name="lastname">
+                            <label for="lastname">Last Name</label>
+                        </div>
                     </div>
-                    <div class="col2">
-                        <input type="text" name="lastname">
-                        <label for="lastname">Last Name</label>
+                    <div class="row">
+                        <input type="text" name="phone" id="phone">
+                        <label for="phone">Phone</label>
                     </div>
-                </div>
-                <div class="row">
-                    <input type="text" name="phone" id="phone">
-                    <label for="phone">Phone</label>
-                </div>
-                <div class="row">
-                    <input type="text" name="address" id="address">
-                    <label for="address">Address</label>
-                </div>
+                    <div class="row">
+                        <input type="text" name="address" id="address">
+                        <label for="address">Address</label>
+                    </div>
 
-            </div>
-            <div class="area">
-                <div class="ckeckarea">
-                    <input type="checkbox" name="checkbox1" id="checkbox1" onclick="autofilling(this.form)">
-                    <label for="checkbox1">Check this box if order info and sending info are the same.</label>
+                </div>
+                <div class="area">
+                    <div class="ckeckarea">
+                        <input type="checkbox" name="checkbox1" id="checkbox1" onclick="autofilling(this.form)">
+                        <label for="checkbox1">Check this box if order info and sending info are the same.</label>
+                    </div>
+                    <div class="row">
+                        <div class="col2">
+                            <input type="text" name="newfirstname">
+                            <label for="newfistname">First Name</label>
+                        </div>
+                        <div class="col2">
+                            <input type="text" name="newlastname">
+                            <label for="newlastname">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="text" name="newaddress" id="newaddress">
+                        <label for="newaddress">Sending Address</label>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col2">
-                        <input type="text" name="newfirstname">
-                        <label for="newfistname">First Name</label>
-                    </div>
-                    <div class="col2">
-                        <input type="text" name="newlastname">
-                        <label for="newlastname">Last Name</label>
-                    </div>
+                    <input type="submit" value="Submit" class="btn">
+                    <input type="submit" value="cancel" class="btn">
                 </div>
-                <div class="row">
-                    <input type="text" name="newaddress" id="newaddress">
-                    <label for="newaddress">Sending Address</label>
-                </div>
-            </div>
-            <div class="row">
-                <input type="submit" value="Submit" class="btn">
-                <input type="submit" value="cancel" class="btn">
-            </div>
-        </form>
+            </form>
+        </element>
         <p>
             <button type="button">Go back</button>
         </p>
