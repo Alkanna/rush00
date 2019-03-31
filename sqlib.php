@@ -83,6 +83,16 @@ function create_db($con)
     return ($con);
 }
 
+function create_categorie_secondaire_table($con)
+{
+    $req = "CREATE TABLE IF NOT EXISTS categorieS (id_categorieS INTEGER NOT NULL AUTO_INCREMENT, ";
+    $req .= "description_categorieS VARCHAR(255) NOT NULL, ";
+    $req .= "PRIMARY KEY (id_categorieS))";
+//       echo $req."\n".
+    run_req($con, $req);
+//        echo "Table categorie Created\n";
+}
+
 function create_users_table($con)
 {
     $req = "CREATE TABLE IF NOT EXISTS users (id_user INTEGER NOT NULL AUTO_INCREMENT, ";
@@ -91,7 +101,9 @@ function create_users_table($con)
     $req .= "email_user VARCHAR(255), ";
     $req .= "address_user VARCHAR(255), ";
     $req .= "permission TINYINT DEFAULT 0, ";
-    $req .= "PRIMARY KEY (id_user))";
+    $req .= "id_categorieS TINYINT DEFAULT 0, ";
+    $req .= "PRIMARY KEY (id_user)) ";
+//    $req .= "FOREIGN KEY (id_categorieS) REFERENCES categorieS(id_categorieS)) ";
 //        echo $req."\n".
     run_req($con, $req);
 //        echo "Table User Created\n";
@@ -205,15 +217,7 @@ function create_categorie_principale_table($con)
 //        echo "Table categorie Created\n";
 }
 
-function create_categorie_secondaire_table($con)
-{
-    $req = "CREATE TABLE IF NOT EXISTS categorieS ( id_categorieS INTEGER NOT NULL AUTO_INCREMENT, ";
-    $req .= "description_categorieS VARCHAR(255) NOT NULL, ";
-    $req .= "PRIMARY KEY (id_categorieS))";
-//       echo $req."\n".
-    run_req($con, $req);
-//        echo "Table categorie Created\n";
-}
+
 
 function create_relation_categorie_table($con)
 {
@@ -286,11 +290,13 @@ function register($pseudo_user, $passwd_user, $email_user)
      echo "ajout users succeed\n";
 }
 
-function add_produit($con, $nom_produit, $prix_produit, $qt_produit, $description_produit)
+function add_produit($con, $nom_produit, $prix_produit, $qt_produit, $description_produit, $id_catS)
 {
     $req = "INSERT INTO produit";
-    $req .= "( nom_produit, prix_produit, qt_produit, description_produit) ";
-    $req .= "VALUES ('" . test_input($nom_produit) . "','" . test_input($prix_produit) . "','" . test_input($qt_produit) . "','" . test_input($description_produit) . "')";
+    $req .= "( nom_produit, prix_produit, qt_produit, description_produit, id_categorieS) ";
+    $req .= "VALUES ('" . test_input($nom_produit) . "','" . test_input($prix_produit);
+    $req .= "','" . test_input($qt_produit) . "','" . test_input($description_produit);
+    $req .= "','". test_input($id_catS)."')";
 //        echo $req."\n".
     run_req($con, $req);
 //        echo "ajout produit succeed\n";
@@ -355,9 +361,16 @@ function get_produit($con, $id_produit)
     return ($ret);
 }
 
-function get_categorie($con)
+function get_categorieS($con)
 {
-    $req = "SELECT * FROM categorie";
+    $req = "SELECT * FROM categorieS";
+    $ret = return_req_result($con, $req);
+    return ($ret);
+}
+
+function get_categorieP($con)
+{
+    $req = "SELECT * FROM categorieP";
     $ret = return_req_result($con, $req);
     return ($ret);
 }
