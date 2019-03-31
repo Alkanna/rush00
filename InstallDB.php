@@ -55,7 +55,11 @@ function install_bd()
         add_categorieS($con, "T-Shirts");
         add_categorieS($con, "Jumpers");
         add_categorieS($con, "Cardigans");
-        add_categorieS($con, "Jumpwear");
+        add_categorieS($con, "Knitwear");
+
+        add_categorieS($con, "Formal");
+        add_categorieS($con, "Palazzo");
+
         add_categorieS($con, "Bridal Dress");
         add_categorieS($con, "Cocktail Dress");
         add_categorieS($con, "Maxi Dress");
@@ -68,13 +72,17 @@ function install_bd()
 make_categori_relation(1, 1);
 make_categori_relation(2, 1);
 make_categori_relation(3, 1);
-make_categori_relation(4, 2);
-make_categori_relation(5, 3);
-make_categori_relation(6, 3);
+make_categori_relation(4, 1);
+
+make_categori_relation(5, 2);
+make_categori_relation(6, 2);
+
 make_categori_relation(7, 3);
 make_categori_relation(8, 3);
 make_categori_relation(9, 3);
-make_categori_relation(10,3);
+make_categori_relation(10, 3);
+make_categori_relation(11, 3);
+make_categori_relation(12,3);
 //make_categori_relation(11,2);
 
 

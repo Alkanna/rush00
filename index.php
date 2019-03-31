@@ -25,7 +25,13 @@
                             <li><a href="search.php">Knitwear</a></li>
                         </ul>
                     </li>
-                    <li><a href="search.php">Trousers</a></li>
+                    <li>
+                        <a href="search.php">Trousers</a>
+                        <ul class="sub-menu">
+                            <li><a href="search.php">Formal</a></li>
+                            <li><a href="search.php">Palazzo</a></li>
+                        </ul>
+                    </li>
                     <li>
                         <a href="search.php">Dresses</a>
                         <ul class="sub-menu">
@@ -44,10 +50,12 @@
         <div class="wrapper">
             <ul id="social">
                 <li>
-                    <a href="https://www.facebook.com/42born2code/" class="facebook" title="like us us on Facebook">like us us on Facebook</a>
+                    <a href="https://www.facebook.com/42born2code/" class="facebook" title="like us us on Facebook">like
+                        us us on Facebook</a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/42born2code" class="twitter" title="follow us on twitter">follow us on twitter</a>
+                    <a href="https://twitter.com/42born2code" class="twitter" title="follow us on twitter">follow us on
+                        twitter</a>
                 </li>
             </ul>
             <form>
@@ -56,12 +64,12 @@
                 </button>
             </form>
             <div id="action-bar">
-            <?php if (isset($_SESSION['loggued_on_user']) && !empty($_SESSION['loggued_on_user'])) : ?>
+                <?php if (isset($_SESSION['loggued_on_user']) && !empty($_SESSION['loggued_on_user'])) : ?>
                 <a href="administration.php">My Account</a> /
                 <a href="logout.php">Logout</a> /
-            <?php else : ?>
+                <?php else : ?>
                 <a href="sign_in.php">Login/Register</a> /
-            <?php endif;?>
+                <?php endif;?>
                 <a href="viewbasket.php">Your bag (0)</a>
             </div>
         </div>
