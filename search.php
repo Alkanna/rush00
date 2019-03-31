@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include ('sqlib.php');
 ?>
 <html>
 
@@ -83,6 +84,11 @@
             </form>
         </header>
         <ul id="items">
+            <?php
+            $con = connect_db();
+            $products = get_list_produit();
+            var_dump($products);
+            ?>
             <li>
                 <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
                 <a href="product.php" class="title">Elegant evening Dress</a>
