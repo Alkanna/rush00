@@ -1,6 +1,3 @@
-<!DOCTYPE php>
-<php lang="en">
-
 <head>
     <meta charset="utf-8" />
     <title>Order</title>
@@ -174,26 +171,23 @@
             <h1>Shipping address</h1>
             <p>
                 <label for="shipFName">First name:</label>
-                <input name="shipFName" type="text" disabled id="shipFName" required="true" /><span
-                    class="alert">*</span>
+                <input name="shipFName" type="text" id="shipFName" required="true" /><span class="alert">*</span>
             </p>
             <p>
                 <label for="shipLName">Last name:</label>
-                <input id="shipLName" type="text" disabled name="shipLName" required="true" /><span
-                    class="alert">*</span>
+                <input id="shipLName" type="text" name="shipLName" required="true" /><span class="alert">*</span>
             </p>
             <p>
                 <label for="shipAddress1">Address:</label>
-                <input name="shipAddress1" type="text" disabled id="shipAddress1" required="true" /><span
-                    class="alert">*</span>
+                <input name="shipAddress1" type="text" id="shipAddress1" required="true" /><span class="alert">*</span>
             </p>
             <p>
                 <label for="shipAddress2">&nbsp;</label>
-                <input name="shipAddress2" type="text" disabled id="shipAddress2" />
+                <input name="shipAddress2" type="text" id="shipAddress2" />
             </p>
             <p>
                 <label for="shipCity">City:</label>
-                <input name="shipCity" type="text" disabled id="shipCity" required="true" /><span class="alert">*</span>
+                <input name="shipCity" type="text" id="shipCity" required="true" /><span class="alert">*</span>
             </p>
             <p>
                 <label for="shipCountry">Country:</label>
@@ -264,12 +258,60 @@
             </p>
             <p>
                 <label for="shipZip">Post code:</label>
-                <input name="shipZip" type="text" disabled id="shipZip" required="true" /><span class="alert">*</span>
+                <input name="shipZip" type="text" id="shipZip" required="true" /><span class="alert">*</span>
             </p>
             <p>
                 <label>&nbsp;</label><button type="submit" class="continue">Continue</button>
             </p>
         </form>
+        <form id="myform">
+  <header>Shipping Order Form</header>
+  <div class="area">
+    <div class="row">
+      <div class="col2">
+        <input type="text" name="firstname">
+        <label for="fistname">First Name</label>
+      </div>
+      <div class="col2">
+        <input type="text" name="lastname">
+        <label for="lastname">Last Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <input type="text" name="phone" id="phone">
+      <label for="phone">Phone</label>
+    </div>
+    <div class="row">
+      <input type="text" name="address" id="address">
+      <label for="address">Address</label>
+    </div>
+
+  </div>
+  <div class="area">
+    <div class="ckeckarea">
+      <input type="checkbox" name="checkbox1" id="checkbox1" onclick="autofilling(this.form)">
+      <label for="checkbox1">Check this box if order info and sending info are the same.</label>
+    </div>
+    <div class="row">
+      <div class="col2">
+        <input type="text" name="newfirstname">
+        <label for="newfistname">First Name</label>
+      </div>
+      <div class="col2">
+        <input type="text" name="newlastname">
+        <label for="newlastname">Last Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <input type="text" name="newaddress" id="newaddress">
+      <label for="newaddress">Sending Address</label>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit" class="btn">
+    <input type="submit" value="cancel" class="btn">
+  </div>
+</form>
         <p>
             <button type="button">Go back</button>
         </p>
