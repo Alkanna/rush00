@@ -7,7 +7,6 @@ if (isset($_GET['cat'])) {
 } else if (isset($_GET['subcat'])) {
     $products = get_produit_categories($_GET['subcat']);
 }
-$products = get_list_produit($con);
 $main_cat = get_categoriep();
 $sub_cat = get_categories();
 $test = get_categories_related_to_P(1);
