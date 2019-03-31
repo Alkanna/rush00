@@ -40,7 +40,7 @@ function install_bd()
 
     }
     $cat = "categorie";
-    for ($i = 0; $i < 10; $i++) {
+    for ($i = 0; $i < 12; $i++) {
         add_categorie($con, $cat.$i);
     }
     echo "BD Successfully installed";
