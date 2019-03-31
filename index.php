@@ -1,5 +1,8 @@
 <?php
+    include("./Install.php");
     session_start();
+    
+    install_bd();
 ?>
 <html>
 
