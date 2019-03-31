@@ -60,7 +60,6 @@
     <article id="address">
         <element id="form">
             <form id="orderform">
-                <header>Shipping Order Form</header>
                 <div class="area">
                     <div class="row">
                         <div class="col2">

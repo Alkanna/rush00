@@ -894,7 +894,7 @@ div.right p {
     border: 2px solid #b29f90;
     border-radius: 5px;
     background: transparent;
-    color: #ffffff;
+    color: #b29f90;
     display: table-row-group;
     transition: all 0.3s ease;
     font-size: 1.05em;
@@ -902,11 +902,11 @@ div.right p {
 
 #form input:focus {
     outline: none !important;
-    border-color: #69B692;
+    border-color: #FF5454
 }
 
 #form input:focus+label {
-    color: #69b692;
+    color: #FF5454
 }
 
 #form .row {
@@ -954,7 +954,7 @@ div.right p {
     height: 14px;
     margin-top: -8px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid #FF5454
     border-radius: 3px;
 }
 
@@ -965,18 +965,18 @@ div.right p {
     width: 8px;
     height: 4px;
     margin-top: -4px;
-    border-left: 2px solid #69B692;
-    border-bottom: 2px solid #69B692;
+    border-left: 2px solid #FF5454
+    border-bottom: 2px solid #FF5454
     -webkit-transform: rotate(-45deg) scale(.5);
     transform: rotate(-45deg) scale(.5);
 }
 
 #form .ckeckarea label:hover::before {
-    border-color: #69B692;
+    border-color: #FF5454
 }
 
 #form .ckeckarea input[type="checkbox"]:checked+label::before {
-    border: 1px solid #69B692;
+    border: 1px solid #FF5454
 }
 
 #form .ckeckarea input[type="checkbox"]:checked+label::after {
@@ -986,7 +986,7 @@ div.right p {
 }
 
 #form .ckeckarea input[type="checkbox"]:checked~label {
-    color: #69B692;
+    color: #FF5454
 }
 
 #form .btn {
@@ -998,8 +998,8 @@ div.right p {
 }
 
 #form .btn:hover {
-    background: #69B692;
-    border-color: #69B692;
+    background: #FF5454
+    border-color: #FF5454
     cursor: pointer;
 }
 
