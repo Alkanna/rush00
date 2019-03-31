@@ -15,9 +15,9 @@ if (isset($_GET['cat'])) {
         $products = get_produit_categories($_SESSION['subcat']);
     else if ($_SESSION['subcat'] && $_GET['sort'] == "desc")
         $products = get_produit_categories_desc($_SESSION['subcat']);
-    $_SESSION['subcat'] = $_GET['subcat'];
     else
         $products = get_produit_categories($_GET['subcat']);
+    $_SESSION['subcat'] = $_GET['subcat'];
 
 }
 $main_cat = get_categoriep();
