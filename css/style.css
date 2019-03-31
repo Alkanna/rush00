@@ -914,6 +914,7 @@ div.right p {
     width: 100%;
     padding: 0;
     display: table;
+    text-align: center;
 }
 
 #form .col2 {
