@@ -29,7 +29,13 @@ $products = get_list_produit($con);
                             <li><a href="search.php">Knitwear</a></li>
                         </ul>
                     </li>
-                    <li><a href="search.php">Trousers</a></li>
+                    <li>
+                        <a href="search.php">Trousers</a>
+                        <ul class="sub-menu">
+                            <li><a href="search.php">Formal</a></li>
+                            <li><a href="search.php">Palazzo</a></li>
+                        </ul>
+                    </li>
                     <li>
                         <a href="search.php">Dresses</a>
                         <ul class="sub-menu">
