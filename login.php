@@ -19,20 +19,6 @@ function start_login()
     }
 }
 
-function is_pseudo_exist($con, $pseudo)
-{
-    $req = "SELECT id_user FROM users WHERE pseudo_user = '" . test_input($pseudo) . "'";
-    $ret = return_req_result($con, $req);
-    return (count($ret) > 0 ? 1 : 0);
-}
-
-function is_mail_exist($con, $mail)
-{
-    $req = "SELECT id_user FROM users WHERE email_user = '" . test_input($mail) . "'";
-    $ret = return_req_result($con, $req);
-    return (count($ret) > 0 ? 1 : 0);
-}
-
 function start_register()
 {
     if ($_POST['submit'] == "OK") {
