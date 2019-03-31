@@ -406,7 +406,7 @@ function get_produit_categoriep($id_catP)
     $con = connect_db();
 
     $req = "SELECT * FROM produit WHERE id_categories In (";
-    $req .= "SELECT id_categories FROM relationcat WHERE id_categoriep = ".test_input($id_catP).") ORDER BY prix_produit";
+    $req .= "SELECT id_categories FROM relationcat WHERE id_categoriep = '".test_input($id_catP)."') ORDER BY prix_produit ASC";
     $ret = return_req_result($con, $req);
     return ($ret);
 }
@@ -416,7 +416,7 @@ function get_produit_categories($id_catS)
 {
     $con = connect_db();
 
-    $req = "SELECT * FROM produit WHERE id_categories = " . test_input($id_catS) . "ORDER BY prix_produit";
+    $req = "SELECT * FROM produit WHERE id_categories = " . test_input($id_catS) . " ORDER BY prix_produit ASC";
     $ret = return_req_result($con, $req);
     return ($ret);
 }
