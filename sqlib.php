@@ -268,3 +268,10 @@ function get_produit($con, $id_produit)
     $ret = return_req_result($con, $req);
     return ($ret);
 }
+
+functon get_categorie($con)
+{
+    $req = "SELECT * FROM categorie";
+    $ret = return_req_result($con, $req);
+    return ($ret);
+}
