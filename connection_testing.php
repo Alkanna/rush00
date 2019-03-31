@@ -3,15 +3,15 @@
 include 'sqlib.php';
 
 if (connect_mysql_serveur()) {
-    echo "[Server connect : Success !]\n";
+    echo "[Server connect : Success !][[ $con ]]\n";
 } else {
-    echo "[Server connect :Failure !]\n";
+    echo "[Server connect :Failure !][[ $con ]]\n";
 }
 
 if ($con = connect_db()) {
-    echo "[DB Connect : Success !]\n";
+    echo "[DB Connect : Success !][[ $con ]]\n";
 } else {
-    echo "[DB Connect : Failure !]\n";
+    echo "[DB Connect : Failure !][[ $con ]]\n";
 }
 
 if (is_pseudo_exist($con, 'root')) {
