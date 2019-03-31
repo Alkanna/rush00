@@ -238,6 +238,16 @@ function add_produit($con, $nom_produit, $prix_produit, $qt_produit, $descriptio
 //        echo "ajout produit succeed\n";
 }
 
+function add_categorie($con, $description_categorie)
+{
+    $req = "INSERT INTO categorie";
+    $req .= "( description_categorie) ";
+    $req .= "VALUES ('" . test_input($description_categorie). "')";
+//        echo $req."\n".
+    run_req($con, $req);
+//        echo "ajout produit succeed\n";
+}
+
 function get_list_produit($con)
 {
     $req = "SELECT * FROM produit";

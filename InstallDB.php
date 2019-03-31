@@ -36,8 +36,13 @@ function install_bd()
 
     for ($i = 0; $i < 10; $i++) {
         add_produit($con, $nom_produit . $i, $prix_produit . $i, $qt_produit . $i, $description_produit . $i);
-    }
 
+
+    }
+    $cat = "categorie";
+    for ($i = 0; $i < 10; $i++) {
+        add_categorie($cat.$i);
+    }
     echo "BD Successfully installed";
 
 }
