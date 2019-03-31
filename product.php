@@ -1,5 +1,14 @@
 <?php
     session_start();
+    if ($_GET['id'] == NULL) {
+        header("HTTP/1.0 404 Not Found");
+        header("Refresh: 0; url=/404.php"); // or just include 404 and don't display the rest ?
+        exit();
+    }
+    include ('sqlib.php');
+    $con = connect_db();
+    $product = get_produit($con, $_GET['id']);
+    var_dump($product);
 ?>
 <head>
     <meta charset="utf-8" />
@@ -71,7 +80,7 @@
             <a href="search.php">Summer Dress</a> > Summer Dress
         </div>
         <div id="description">
-            <h1>Elegant evening Dress</h1>
+            <h1><?php  ?></h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 volutpat ultricies fringilla. Suspendisse iaculis tristique leo, id
