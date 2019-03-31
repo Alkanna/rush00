@@ -9,7 +9,6 @@ include 'sqlib.php';
 $con = connect_db();
 $product = get_produit($con, $_GET['id']);
 var_dump($product);
-echo $product[0]['nom_produit'];
 ?>
 
 <head>
@@ -81,14 +80,14 @@ echo $product[0]['nom_produit'];
     <article id="mainview">
         <div id="breadcrumb">
             <a href="index.php">Home</a> > <a href="search.php">Dresses</a> >
-            <a href="search.php">Summer Dress</a> > <?php echo $product['nom_produit']; ?>
+            <a href="search.php">Summer Dress</a> > <?php echo $product[0]['nom_produit']; ?>
         </div>
         <div id="description">
             <h1>
-                <?php echo $product['nom_produit']; ?>
+                <?php echo $product[0]['nom_produit']; ?>
             </h1>
             <p>
-                <?php echo $product['description_produit']; ?>
+                <?php echo $product[0]['description_produit']; ?>
             </p>
             <p>
                 <select>
