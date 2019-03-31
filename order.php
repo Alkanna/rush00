@@ -15,11 +15,11 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="search.php">Tops</a>
+                        <a href="search.php?cat=1">Tops</a>
                         <ul class="sub-menu">
-                            <li><a href="search.php">Tshirts</a></li>
-                            <li><a href="search.php">Jumpers</a></li>
-                            <li><a href="search.php">Cardigans</a></li>
+                            <li><a href="search.php?scat=1">Tshirts</a></li>
+                            <li><a href="search.php?scat=2">Jumpers</a></li>
+                            <li><a href="search.php?scat=3">Cardigans</a></li>
                             <li><a href="search.php">Knitwear</a></li>
                         </ul>
                     </li>
@@ -33,7 +33,7 @@
                     <li>
                         <a href="search.php">Dresses</a>
                         <ul class="sub-menu">
-                            <li><a href="search.php">Bridal dress</a></li>
+                            <li><a href="search.php?cat=bridal_dress">Bridal dress</a></li>
                             <li><a href="search.php">Cocktail dress</a></li>
                             <li><a href="search.php">Maxi dress</a></li>
                             <li><a href="search.php">Shift dress</a></li>
