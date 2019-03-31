@@ -101,7 +101,7 @@
                         <label for="newaddress">Sending Address</label>
                     </div>
                 </div>
-                <div class="row">
+                <div class="rowbtn">
                     <input type="submit" value="Submit" class="btn">
                     <input type="submit" value="Cancel" class="btn">
                 </div>
