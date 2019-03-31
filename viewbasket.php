@@ -3,6 +3,7 @@
     var_dump($_GET['additem']);
     $_SESSION['items'][] = $_GET['additem'];
     var_dump($_SESSION);
+    $con = connect_db();
 ?>
 <head>
     <meta charset="utf-8" />
@@ -82,6 +83,30 @@
                 <th scope="col" class="options">Options</th>
                 <th align="right" scope="col" class="price">Price</th>
             </tr>
+            <?php
+            $i = 0;
+            while ($_SESSION['items'][$i]) {
+                ?><tr>
+                    <td align="left" valign="top" class="description">
+                    <a href="product.php?id=<?php echo $_SESSION['items'][$i];?>"><img src="images/thumb1.jpg" class="left" />
+                    <p>
+                        <a href="product.php?id=<?php echo $_SESSION['items'][$i];?>"><?php
+                        $produit = get_produit($con, $_SESSION['items'][$i]);
+                        echo $produit['nom_produit'];?></a><br /><?php echo $produit['description_produit'];
+                        ?></p>
+                        </td>
+                        <td aligh="left" valign="top" class="options">
+                            <dl>
+                            <dt>Product ID</dt>
+                            <dd><?php echo $produit['id_produit'];?></dd>
+                            <dt>Quantity:</dt>
+                            <dd><?php echo $_SESSION['items'][$i]['quantity'];?></dd>
+            </dl>
+            </td>
+            <td align="right" valign="top" class="price">&euro;<?php echo $produit['prix_produit']; ?>249</td>
+            </tr>
+
+            <?php $i++ ;} ?>
             <tr>
                 <td align="left" valign="top" class="description">
                     <a href="main.php"><img src="images/thumb1.jpg" alt="Elegant evening Dress" class="left" /></a>
