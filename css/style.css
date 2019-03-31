@@ -902,11 +902,11 @@ div.right p {
 
 #form input:focus {
     outline: none !important;
-    border-color: #FF5454
+    border-color: #FF5454;
 }
 
 #form input:focus+label {
-    color: #FF5454
+    color: #FF5454;
 }
 
 #form .row {
@@ -954,7 +954,7 @@ div.right p {
     height: 14px;
     margin-top: -8px;
     background: transparent;
-    border: 2px solid #FF5454
+    border: 2px solid #FF5454;
     border-radius: 3px;
 }
 
@@ -965,8 +965,8 @@ div.right p {
     width: 8px;
     height: 4px;
     margin-top: -4px;
-    border-left: 2px solid #FF5454
-    border-bottom: 2px solid #FF5454
+    border-left: 2px solid #FF5454;
+    border-bottom: 2px solid #FF5454;
     -webkit-transform: rotate(-45deg) scale(.5);
     transform: rotate(-45deg) scale(.5);
 }
@@ -998,8 +998,8 @@ div.right p {
 }
 
 #form .btn:hover {
-    background: #FF5454
-    border-color: #FF5454
+    background: #FF5454;
+    border-color: #FF5454;
     cursor: pointer;
 }
 
