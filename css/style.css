@@ -250,7 +250,7 @@ header .wrapper {
     background: transparent url(../images/sprite.png) no-repeat -60px 0px;
     overflow: hidden;
     text-indent: -999em;
-    margin: 18px 0px 26px;
+    margin: 25px 0px 26px;
 }
 
 nav {
@@ -497,7 +497,6 @@ body#home {
     -webkit-animation: delay 4.5s;
     animation: 0.5s;
     -moz-animation: delay 4.5s;
-    margin-top: 25px;
 }
 
 #home nav {
