@@ -103,7 +103,7 @@
                             <dd><?php echo $produit[0]['id_produit'];?></dd>
             </dl>
             </td>
-            <td align="right" valign="top" class="price">&euro;<?php echo $produit[0]['prix_produit']; ?>249</td>
+            <td align="right" valign="top" class="price">&euro;<?php echo $produit[0]['prix_produit']; ?></td>
             </tr>
 
             <?php $i++ ;}} ?>
