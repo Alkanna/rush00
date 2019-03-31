@@ -68,7 +68,7 @@ function return_req_result($con, $req)
 
 function create_db($con)
 {
-    $name_BD = "rush";
+    $name_BD = "wisk_rush00";
 
     $req = "DROP DATABASE IF EXISTS " . $name_BD;
     if (!mysqli_query($con, $req)) {
