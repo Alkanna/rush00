@@ -6,7 +6,8 @@ $con = connect_db();
 $products = get_list_produit($con);
 $main_cat = get_categorieP();
 $sub_cat = get_categorieS();
-var_dump($main_cat, $sub_cat);
+$test = get_categorieS_related_to_P(1);
+var_dump($main_cat, $sub_cat, $test);
 ?>
 <html>
 
@@ -27,6 +28,7 @@ var_dump($main_cat, $sub_cat);
                         <li>
                             <a href="search.php?cat=<?php echo $main_cat[$key]['id_categorieP']?>">
                             <?php echo $main_cat[$key]['description_categorieP'] ?></a>
+                            <?php  ?>
                 </li>
                 </ul>
                <?php } ?>
