@@ -39,7 +39,7 @@ function connect_db()
 
     $con = mysqli_connect($url, $user, $pass, $dbname);
     if (!$con) {
-        die(' Connexion db impossible : ');
+        die(' Connexion db impossible : ' . mysqli_error($con));
     }
 
     return ($con);
