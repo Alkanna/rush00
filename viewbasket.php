@@ -154,7 +154,7 @@
             </p>
             <strong style="padding-bottom: 10px;">Your total</strong> <em>&euro;398.00</em>
         </div>
-        <a href="order.php"><button class="continue">Pay securely now</button></a>
+        <button class="continue" href="order.php">Pay securely now</button>
     </article>
     <footer>
         <div class="wrapper">
