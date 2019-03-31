@@ -78,7 +78,7 @@ $products = get_list_produit($con);
             <h1>Summer Dress</h1>
         </div>
         <header>
-            <form action="#">
+            <form action="POST">
                 <select name="sortBy" id="sortBy">
                     <option value="">Default</option>
                     <option value="PriceHiLo">Price (High to Low)</option>
