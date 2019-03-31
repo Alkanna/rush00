@@ -1,8 +1,7 @@
 <?php
 session_start();
 if ($_GET['id'] == null) {
-    header("HTTP/1.0 404 Not Found");
-    header("Refresh: 0; url=/404.php"); // or just include 404 and don't display the rest ?
+    header("HTTP/1.0 404 Not Found"); // or just include 404 and don't display the rest ?
     exit();
 }
 include 'sqlib.php';
