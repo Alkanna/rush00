@@ -94,21 +94,20 @@
                     <p>
                         <a href="product.php?id=<?php echo $_SESSION['items'][$i];?>"><?php
                         $produit = get_produit($con, $_SESSION['items'][$i]);
-                        var_dump($produit);
-                        echo $produit['nom_produit'];?></a><br /><?php echo $produit['description_produit'];
+                        echo $produit[0]['nom_produit'];?></a><br /><?php echo $produit[0]['description_produit'];
                         ?></p>
                         </td>
                         <td aligh="left" valign="top" class="options">
                             <dl>
                             <dt>Product ID</dt>
-                            <dd><?php echo $produit['id_produit'];?></dd>
+                            <dd><?php echo $produit[0]['id_produit'];?></dd>
             </dl>
             </td>
-            <td align="right" valign="top" class="price">&euro;<?php echo $produit['prix_produit']; ?>249</td>
+            <td align="right" valign="top" class="price">&euro;<?php echo $produit[0]['prix_produit']; ?>249</td>
             </tr>
 
             <?php $i++ ;}} ?>
-            <tr>
+ <!--           <tr>
                 <td align="left" valign="top" class="description">
                     <a href="main.php"><img src="images/thumb1.jpg" alt="Elegant evening Dress" class="left" /></a>
                     <p>
@@ -182,7 +181,7 @@
                     <button>Change details</button>
                 </td>
                 <td align="right" valign="top" class="price">&euro;249</td>
-            </tr>
+            </tr> -->
         </table>
 
         <img src="images/creditcards.gif" class="safe" style="padding-right: 10px; margin-top: 20px;"" />
