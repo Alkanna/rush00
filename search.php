@@ -6,7 +6,7 @@ $con = connect_db();
 $products = get_list_produit($con);
 $main_cat = get_categoriep();
 $sub_cat = get_categories();
-$test = get_categorieS_related_to_P(1);
+$test = get_categories_related_to_P(1);
 var_dump($main_cat, $sub_cat, $test);
 ?>
 <html>
