@@ -78,12 +78,8 @@ $products = get_list_produit($con);
             <h1>Summer Dress</h1>
         </div>
         <header>
-            <form action="POST">
-                <select name="sortBy" id="sortBy">
-                    <option value="">Default</option>
-                    <option value="PriceHiLo">Price (High to Low)</option>
-                    <option value="PriceLoHi">Price (Low to High)</option>
-                </select>
+            <a href="search.php?sort=asc">Sort by Price (Lo to Hi)</a>
+            <a href="search.php?sort=desc">Sort by Price (Hi to Lo)</a>
                 &nbsp; Showing 26 - 50 of 78 Product(s)
             </form>
         </header>
