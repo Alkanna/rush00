@@ -94,6 +94,7 @@
                     <p>
                         <a href="product.php?id=<?php echo $_SESSION['items'][$i];?>"><?php
                         $produit = get_produit($con, $_SESSION['items'][$i]);
+                        var_dump($produit);
                         echo $produit['nom_produit'];?></a><br /><?php echo $produit['description_produit'];
                         ?></p>
                         </td>
