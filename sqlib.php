@@ -70,6 +70,7 @@ function is_pseudo_exist($con, $pseudo)
 {
     $req = "SELECT id_user FROM users WHERE pseudo_user = '" . test_input($pseudo) . "'";
     $ret = return_req_result($con, $req);
+    var_dump($ret);
     return (count($ret) > 0 ? 1 : 0);
 }
 
