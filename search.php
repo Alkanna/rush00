@@ -88,6 +88,11 @@
             $con = connect_db();
             $products = get_list_produit($con);
             var_dump($products);
+            foreach ($products as $key => $value) {
+                ?><a href="product.php?id=<?php echo $value[id_produit]?>"><img src="images/thimb.png" alt="<?php echo $value[nom_produit] ?>" /></a>
+                <a href="product.php?id=<?php $value[id_produit]?>" class="title"><?php echo $value[nom_produit]?></a>
+                <stong><?php echo $value[prix_produit];?>&euro;</strong>
+            }
             ?>
             <li>
                 <a href="product.php"><img src="images/thumb.png" alt="Elegant evening Dress" /></a>
