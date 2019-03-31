@@ -8,7 +8,6 @@ if ($_GET['id'] == null) {
 include 'sqlib.php';
 $con = connect_db();
 $product = get_produit($con, $_GET['id']);
-var_dump($product);
 ?>
 
 <head>
