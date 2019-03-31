@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ('login.php');
+//include ('login.php');
 echo "43264";
 ?>
 <html lang="en">
