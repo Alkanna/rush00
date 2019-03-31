@@ -86,6 +86,7 @@
             </tr>
             <?php
             $i = 0;
+            if (isset($_GET['additem'])) {
             while ($_SESSION['items'][$i]) {
                 ?><tr>
                     <td align="left" valign="top" class="description">
@@ -105,7 +106,7 @@
             <td align="right" valign="top" class="price">&euro;<?php echo $produit['prix_produit']; ?>249</td>
             </tr>
 
-            <?php $i++ ;} ?>
+            <?php $i++ ;}} ?>
             <tr>
                 <td align="left" valign="top" class="description">
                     <a href="main.php"><img src="images/thumb1.jpg" alt="Elegant evening Dress" class="left" /></a>
