@@ -1,6 +1,5 @@
 <?php
 include ('sqlib.php');
-echo "bsr";
 function start_login()
 {
     if ($_POST['submit'] == "OK") {

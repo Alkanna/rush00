@@ -41,4 +41,6 @@ function install_bd()
     echo "BD Successfully installed";
 
 }
+
+install_bd();
 ?>
