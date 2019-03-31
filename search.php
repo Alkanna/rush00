@@ -92,13 +92,13 @@ var_dump($main_cat, $sub_cat, $test);
 <!--            <a href="index.php">Home</a> > <a href="search.php">Dresses</a> >
             <h1>Summer Dress</h1> -->
         </div>
-        <header>
-<!--            <strong>Sort by Price: </strong>
+<!--        <header>
+            <strong>Sort by Price: </strong>
             <a href="search.php?sort=asc">Ascending</a>
             <strong> / </strong>
             <a href="search.php?sort=desc">Descending</a>
-            </form> -->
-        </header>
+            </form>
+        </header> -->
         <ul id="items">
             <?php
 foreach ($products as $key => $value) {?>
