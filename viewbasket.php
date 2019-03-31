@@ -87,7 +87,7 @@
             </tr>
             <?php
             $i = 0;
-            if ($_GET['additem'] != null) {
+            if ($_GET['additem']) {
             while ($_SESSION['items'][$i]) {
                 ?><tr>
                     <td align="left" valign="top" class="description">
