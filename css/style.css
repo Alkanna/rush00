@@ -1000,6 +1000,7 @@ div.right p {
 #form .btn:hover {
     background: #FF5454;
     border-color: #FF5454;
+    color: white;
     cursor: pointer;
 }
 
