@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include ('sqlib.php');
     var_dump($_GET['additem']);
     $_SESSION['items'][] = $_GET['additem'];
     var_dump($_SESSION);
