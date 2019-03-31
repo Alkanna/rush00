@@ -65,11 +65,11 @@ function install_bd()
 //    }
 
 
-make_categori_relation(0, 0);
-make_categori_relation(1, 0);
+//make_categori_relation(0, 0);
+/*make_categori_relation(1, 0);
 make_categori_relation(2, 0);
 make_categori_relation(3, 0);
-make_categori_relation(4, 1);
+make_categori_relation(4, 1);*/
 make_categori_relation(5, 2);
 make_categori_relation(6, 2);
 make_categori_relation(7, 2);
