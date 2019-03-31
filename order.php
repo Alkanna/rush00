@@ -28,7 +28,7 @@
                             <li><a href="search.php">Cocktail dress</a></li>
                             <li><a href="search.php">Maxi dress</a></li>
                             <li><a href="search.php">Shift dress</a></li>
-                            <li><a href="search.php" class="current">Summer dress</a></li>
+                            <li><a href="search.php">Summer dress</a></li>
                             <li><a href="search.php">Warp dress</a></li>
                         </ul>
                     </li>
