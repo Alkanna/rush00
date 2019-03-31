@@ -1,5 +1,8 @@
 <?php
     session_start();
+    var_dump($_GET['additem']);
+    $_SESSION['items'][] = $_GET['additem'];
+    var_dump($_SESSION);
 ?>
 <head>
     <meta charset="utf-8" />
