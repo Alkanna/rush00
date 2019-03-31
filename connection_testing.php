@@ -24,4 +24,4 @@ if (is_pseudo_exist($con, 'root')) {
     echo "[We can't read data :(]";
 }
 
-ver_dump(get_list_produit($con));
+var_dump(get_list_produit($con));
