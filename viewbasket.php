@@ -100,8 +100,6 @@
                             <dl>
                             <dt>Product ID</dt>
                             <dd><?php echo $produit['id_produit'];?></dd>
-                            <dt>Quantity:</dt>
-                            <dd><?php echo $_SESSION['items'][$i]['quantity'];?></dd>
             </dl>
             </td>
             <td align="right" valign="top" class="price">&euro;<?php echo $produit['prix_produit']; ?>249</td>
