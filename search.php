@@ -95,7 +95,7 @@ foreach ($products as $key => $value) {
                         alt="<?php echo $value['nom_produit'] ?>" /></a>
                 <a href="product.php?id=<?php $value['id_produit']?>"
                     class="title"><?php echo $value['nom_produit'] ?></a>
-                <stong><?php echo $value['prix_produit']; ?>&euro;</strong>
+                <strong><?php echo $value['prix_produit']; ?>&euro;</strong>
             </li><?php
 }
 ?>
