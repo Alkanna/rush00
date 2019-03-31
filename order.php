@@ -52,8 +52,13 @@
                 </button>
             </form>
             <div id="action-bar">
-                <a href="sign_in.php">Login/Register</a> //
-                <a href="viewbasket.php">Your bag (3) &nbsp; &euro;148</a>
+            <?php if (isset($_SESSION['loggued_on_user']) && !empty($_SESSION['loggued_on_user'])) : ?>
+                <a href="administration.php">My Account</a> /
+                <a href="logout.php">Logout</a> /
+            <?php else : ?>
+                <a href="sign_in.php">Login/Register</a> /
+            <?php endif;?>
+                <a href="viewbasket.php">Your bag (0)</a>
             </div>
         </div>
     </aside>
