@@ -23,3 +23,5 @@ if (is_pseudo_exist($con, 'root')) {
 } else {
     echo "[We can't read data :(]";
 }
+
+ver_dump(get_list_produit($con));
