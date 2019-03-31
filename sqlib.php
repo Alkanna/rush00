@@ -85,9 +85,9 @@ function create_db($con)
 
 function create_categorie_secondaire_table($con)
 {
-    $req = "CREATE TABLE IF NOT EXISTS categorieS (id_categorieS INTEGER NOT NULL AUTO_INCREMENT, ";
-    $req .= "description_categorieS VARCHAR(255) NOT NULL, ";
-    $req .= "PRIMARY KEY (id_categorieS))";
+    $req = "CREATE TABLE IF NOT EXISTS categories (id_categories INTEGER NOT NULL AUTO_INCREMENT, ";
+    $req .= "description_categories VARCHAR(255) NOT NULL, ";
+    $req .= "PRIMARY KEY (id_categories))";
 //       echo $req."\n".
     run_req($con, $req);
 //        echo "Table categorie Created\n";
@@ -101,9 +101,9 @@ function create_users_table($con)
     $req .= "email_user VARCHAR(255), ";
     $req .= "address_user VARCHAR(255), ";
     $req .= "permission TINYINT DEFAULT 0, ";
-    $req .= "id_categorieS TINYINT DEFAULT 0, ";
+    $req .= "id_categories TINYINT DEFAULT 0, ";
     $req .= "PRIMARY KEY (id_user)) ";
-//    $req .= "FOREIGN KEY (id_categorieS) REFERENCES categorieS(id_categorieS)) ";
+//    $req .= "FOREIGN KEY (id_categories) REFERENCES categories(id_categories)) ";
 //        echo $req."\n".
     run_req($con, $req);
 //        echo "Table User Created\n";
@@ -154,10 +154,10 @@ function create_produit_table($con)
     $req .= "prix_produit INTEGER NOT NULL, ";
     $req .= "qt_produit INTEGER NOT NULL, ";
     $req .= "description_produit VARCHAR(255) NOT NULL, ";
-    $req .= "id_categorieS INTEGER NOT NULL, ";
+    $req .= "id_categories INTEGER NOT NULL, ";
 //        $req .= "image_produit INTEGER NOT NULL, ";
     $req .= "PRIMARY KEY (id_produit), ";
-    $req .= "FOREIGN KEY (id_categorieS) REFERENCES categorieS(id_categorieS)) ";
+    $req .= "FOREIGN KEY (id_categories) REFERENCES categories(id_categories)) ";
 //        echo $req."\n".
     run_req($con, $req);
 //        echo "Table Produit Created\n";
@@ -167,8 +167,8 @@ function create_relation_table($con)
 {
     $req = "CREATE TABLE IF NOT EXISTS relation (id_produit INTEGER NOT NULL, ";
     $req .= "id_categorie  INTEGER NOT NULL, ";
-    $req .= "PRIMARY KEY (id_categorieP, id_produit), ";
-    $req .= "FOREIGN KEY (id_categorieP) REFERENCES categorieP(id_categorieP), ";
+    $req .= "PRIMARY KEY (id_categoriep, id_produit), ";
+    $req .= "FOREIGN KEY (id_categoriep) REFERENCES categoriep(id_categoriep), ";
     $req .= "FOREIGN KEY (id_produit) REFERENCES produit(id_produit))";
 //        echo $req."\n".
     run_req($con, $req);
@@ -179,9 +179,9 @@ function create_relation_table($con)
 function create_relation_table($con)
 {
     $req = "CREATE TABLE IF NOT EXISTS relationProCat (id_produit INTEGER NOT NULL, ";
-    $req .= "id_categorieS  INTEGER NOT NULL, ";
-    $req .= "PRIMARY KEY (id_categorieS, id_produit), ";
-    $req .= "FOREIGN KEY (id_categorieS) REFERENCES categorieS(id_categorieS), ";
+    $req .= "id_categories  INTEGER NOT NULL, ";
+    $req .= "PRIMARY KEY (id_categories, id_produit), ";
+    $req .= "FOREIGN KEY (id_categories) REFERENCES categories(id_categories), ";
     $req .= "FOREIGN KEY (id_produit) REFERENCES produit(id_produit))";
 //        echo $req."\n".
     run_req($con, $req);
@@ -211,9 +211,9 @@ function create_relation_table($con)
 
 function create_categorie_principale_table($con)
 {
-    $req = "CREATE TABLE IF NOT EXISTS categorieP (id_categorieP INTEGER NOT NULL AUTO_INCREMENT, ";
-    $req .= "description_categorieP VARCHAR(255) NOT NULL, ";
-    $req .= "PRIMARY KEY (id_categorieP))";
+    $req = "CREATE TABLE IF NOT EXISTS categoriep (id_categoriep INTEGER NOT NULL AUTO_INCREMENT, ";
+    $req .= "description_categoriep VARCHAR(255) NOT NULL, ";
+    $req .= "PRIMARY KEY (id_categoriep))";
 //       echo $req."\n".
     run_req($con, $req);
 //        echo "Table categorie Created\n";
@@ -223,11 +223,11 @@ function create_categorie_principale_table($con)
 
 function create_relation_categorie_table($con)
 {
-    $req = "CREATE TABLE IF NOT EXISTS relationcat (id_categorieP INTEGER NOT NULL, ";
-    $req .= "id_categorieS  INTEGER NOT NULL, ";
-    $req .= "PRIMARY KEY (id_categorieP, id_categorieS), ";
-    $req .= "FOREIGN KEY (id_categorieP) REFERENCES categorieP(id_categorieP), ";
-    $req .= "FOREIGN KEY (id_categorieS) REFERENCES categorieS(id_categorieS))";
+    $req = "CREATE TABLE IF NOT EXISTS relationcat (id_categoriep INTEGER NOT NULL, ";
+    $req .= "id_categories  INTEGER NOT NULL, ";
+    $req .= "PRIMARY KEY (id_categoriep, id_categories), ";
+    $req .= "FOREIGN KEY (id_categoriep) REFERENCES categoriep(id_categoriep), ";
+    $req .= "FOREIGN KEY (id_categories) REFERENCES categories(id_categories))";
 //        echo $req."\n".
     run_req($con, $req);
 //        echo "Table relaton Created\n";
@@ -295,7 +295,7 @@ function register($pseudo_user, $passwd_user, $email_user)
 function add_produit($con, $nom_produit, $prix_produit, $qt_produit, $description_produit, $id_catS)
 {
     $req = "INSERT INTO produit";
-    $req .= "( nom_produit, prix_produit, qt_produit, description_produit, id_categorieS) ";
+    $req .= "( nom_produit, prix_produit, qt_produit, description_produit, id_categories) ";
     $req .= "VALUES ('" . test_input($nom_produit) . "','" . test_input($prix_produit);
     $req .= "','" . test_input($qt_produit) . "','" . test_input($description_produit);
     $req .= "','". test_input($id_catS)."')";
@@ -304,10 +304,10 @@ function add_produit($con, $nom_produit, $prix_produit, $qt_produit, $descriptio
 //        echo "ajout produit succeed\n";
 }
 
-function add_categorieP($con, $description_categorie)
+function add_categoriep($con, $description_categorie)
 {
-    $req = "INSERT INTO categorieP";
-    $req .= "( description_categorieP) ";
+    $req = "INSERT INTO categoriep";
+    $req .= "( description_categoriep) ";
     $req .= "VALUES ('" . test_input($description_categorie). "')";
 //        echo $req."\n".
     run_req($con, $req);
@@ -315,10 +315,10 @@ function add_categorieP($con, $description_categorie)
 }
 
 
-function add_categorieS($con, $description_categorie)
+function add_categories($con, $description_categorie)
 {
-    $req = "INSERT INTO categorieS";
-    $req .= "( description_categorieS) ";
+    $req = "INSERT INTO categories";
+    $req .= "( description_categories) ";
     $req .= "VALUES ('" . test_input($description_categorie). "')";
 //        echo $req."\n".
     run_req($con, $req);
@@ -331,7 +331,7 @@ function make_categori_relation($id_catS, $id_catP)
     $con = connect_db();
 
     $req = "INSERT INTO relationcat";
-    $req .= "(id_categorieP, id_categorieS) ";
+    $req .= "(id_categoriep, id_categories) ";
     $req .= "VALUES ('" . test_input($id_catP). "', '".test_input($id_catS)."')";
     run_req($con, $req);
 //        echo "ajout produit succeed\n";
@@ -363,60 +363,60 @@ function get_produit($con, $id_produit)
     return ($ret);
 }
 
-function get_categorieS()
+function get_categories()
 {
     $con = connect_db();
 
-    $req = "SELECT * FROM categorieS";
+    $req = "SELECT * FROM categories";
     $ret = return_req_result($con, $req);
     return ($ret);
 }
 
-function get_categorieP()
+function get_categoriep()
 {
     $con = connect_db();
 
-    $req = "SELECT * FROM categorieP";
+    $req = "SELECT * FROM categoriep";
     $ret = return_req_result($con, $req);
     return ($ret);
 }
 
-function get_categorieP_related_to_S($id_catS)
+function get_categoriep_related_to_S($id_catS)
 {
     $con = connect_db();
 
-    $req =  "SELECT * FROM categoriep WHERE id_categorieP IN(";
-    $req .= "SELECT id_categorieP FROM relationcat WHERE id_categorieS = ".test_input($id_catS).")";
+    $req =  "SELECT * FROM categoriep WHERE id_categoriep IN(";
+    $req .= "SELECT id_categoriep FROM relationcat WHERE id_categories = ".test_input($id_catS).")";
     $ret = return_req_result($con, $req);
     return ($ret);
 }
 
-function get_categorieS_related_to_P($id_catP)
+function get_categories_related_to_P($id_catP)
 {
     $con = connect_db();
 
-    $req =  "SELECT * FROM categories WHERE id_categorieS IN(";
-    $req .= "SELECT id_categorieS FROM relationcat WHERE id_categorieP = ".test_input($id_catP).")";
+    $req =  "SELECT * FROM categories WHERE id_categories IN(";
+    $req .= "SELECT id_categories FROM relationcat WHERE id_categoriep = ".test_input($id_catP).")";
     $ret = return_req_result($con, $req);
     return ($ret);
 }
 
-function get_produit_categorieP($id_catP)
+function get_produit_categoriep($id_catP)
 {
     $con = connect_db();
 
-    $req = "SELECT * FROM produit WHERE id_categorieS In (";
-    $req .= "SELECT id_categorieS FROM relationcat WHERE id_categorieP = ".test_input($id_catP).")";
+    $req = "SELECT * FROM produit WHERE id_categories In (";
+    $req .= "SELECT id_categories FROM relationcat WHERE id_categoriep = ".test_input($id_catP).")";
     $ret = return_req_result($con, $req);
     return ($ret);
 }
 
 
-function get_produit_categorieS($id_catS)
+function get_produit_categories($id_catS)
 {
     $con = connect_db();
 
-    $req = "SELECT * FROM produit WHERE id_categorieS = " . test_input($id_catS);
+    $req = "SELECT * FROM produit WHERE id_categories = " . test_input($id_catS);
     $ret = return_req_result($con, $req);
     return ($ret);
 }
