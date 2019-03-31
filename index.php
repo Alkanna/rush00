@@ -1,8 +1,7 @@
 <?php
-    include("./Install.php");
     session_start();
-    
-    install_bd();
+    include ('InstallDB.php');
+    install_db();
 ?>
 <html>
 
