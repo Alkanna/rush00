@@ -25,8 +25,8 @@ var_dump($main_cat, $sub_cat);
                 <?php foreach ($main_cat as $key => $value) {
                     ?><ul>
                         <li>
-                            <a href="search.php?cat=<?php echo $main_cat[$key][$id_categorieP]?>">
-                            <?php echo $main_cat[$key][$description_categorieP] ?></a>
+                            <a href="search.php?cat=<?php echo $main_cat[$key]['id_categorieP']?>">
+                            <?php echo $main_cat[$key]['description_categorieP'] ?></a>
                 </li>
                 </ul>
                <?php } ?>
