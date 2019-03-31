@@ -6,14 +6,19 @@ if (isset($_GET['cat'])) {
     if ($_SESSION['cat'] && $_GET['sort'] == "asc")
         $products = get_produit_categoriep($_SESSION['cat']);
     else if ($_SESSION['cat'] && $_GET['sort'] == "desc")
-        $products = get_produit_categoriep_desc($_GET['cat']);
+        $products = get_produit_categoriep_desc($_SESSION['cat']);
+    else
+        $products = get_produit_categoriep($_GET['cat']);
     $_SESSION['cat'] = $_GET['cat'];
 } else if (isset($_GET['subcat'])) {
     if ($_SESSION['subcat'] && $_GET['sort'] == "asc")
         $products = get_produit_categories($_SESSION['subcat']);
     else if ($_SESSION['subcat'] && $_GET['sort'] == "desc")
-        $products = get_produit_categories_desc($_GET['subcat']);
+        $products = get_produit_categories_desc($_SESSION['subcat']);
     $_SESSION['subcat'] = $_GET['subcat'];
+    else
+        $products = get_produit_categories($_GET['subcat']);
+
 }
 $main_cat = get_categoriep();
 $sub_cat = get_categories();
