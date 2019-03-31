@@ -39,11 +39,7 @@ function install_bd()
     $description_produit = "description";
 
 
-    for ($i = 0; $i < 10; $i++) {
-        add_produit($con, $nom_produit . $i, $prix_produit . $i, $qt_produit . $i, $description_produit . $i);
 
-
-    }
     $cat = "categorie";
 //    for ($i = 0; $i < 4; $i++) {
         add_categorieP($con, "Tops");
@@ -85,6 +81,13 @@ make_categori_relation(11, 3);
 make_categori_relation(12,3);
 //make_categori_relation(11,2);
 
+
+
+for ($i = 1; $i < 10; $i++) {
+    add_produit($con, $nom_produit . $i, $prix_produit . $i, $qt_produit . $i, $description_produit . $i, $i);
+
+
+}
 
 //   var_dump($description_produit);
 /*$id_catS=1;
