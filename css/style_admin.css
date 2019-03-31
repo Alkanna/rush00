@@ -180,7 +180,7 @@ input[type="mail"]:active {
 }
 
 input[type="text"],
-input[type="image"],
+input[type="number"],
 input[type="password"] {
     background-color: #f6f6f6;
     border: none;
