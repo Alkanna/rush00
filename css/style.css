@@ -914,6 +914,13 @@ div.right p {
     width: 100%;
     padding: 0;
     display: table;
+}
+
+#form .rowbtn {
+    margin: 20px 0;
+    width: 100%;
+    padding: 0;
+    display: table;
     text-align: center;
 }
 
