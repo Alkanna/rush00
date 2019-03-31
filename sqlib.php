@@ -154,6 +154,7 @@ function create_produit_table($con)
     $req .= "prix_produit INTEGER NOT NULL, ";
     $req .= "qt_produit INTEGER NOT NULL, ";
     $req .= "description_produit VARCHAR(255) NOT NULL, ";
+    $req .= "id_categorieS INTEGER NOT NULL, ";
 //        $req .= "image_produit INTEGER NOT NULL, ";
     $req .= "PRIMARY KEY (id_produit))";
 //        echo $req."\n".
